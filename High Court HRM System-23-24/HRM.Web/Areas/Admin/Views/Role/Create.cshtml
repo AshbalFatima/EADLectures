@@ -1,0 +1,20 @@
+﻿@model string
+@{
+    ViewData["Title"] = "CREATE ROLE";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<h4>Create Role</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input name="name" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-success">Create</button>
+        </form>
+    </div>
+</div>

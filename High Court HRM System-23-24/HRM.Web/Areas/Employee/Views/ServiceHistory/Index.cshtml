@@ -1,0 +1,72 @@
+﻿@model IEnumerable<HRM.Models.ViewModels.ServiceHistoryVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h6>Previous Government Service History Other Than Lahore High Court</h6>
+<hr/>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Designation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PayScale)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Deparment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.From)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.To)
+            </th>
+            <th>
+                Relieving Certificate
+            </th>
+            
+            <th>@Html.DisplayNameFor(model => model.JoinThroughProperChannel)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Designation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayScale)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Deparment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.From)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.To)
+            </td>
+             <td>
+                @Html.DisplayForImage(modelItem => item.RelievingURL,item.RelievingURL)
+            </td>
+            <td>
+                @(item.JoinThroughProperChannel? "Yes":"No")
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

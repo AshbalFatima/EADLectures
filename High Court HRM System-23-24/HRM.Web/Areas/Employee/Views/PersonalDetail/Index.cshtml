@@ -1,0 +1,196 @@
+﻿
+@model HRM.Models.ViewModels.EmployeeVM
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var temp = Model;
+    string x = "";
+}
+
+
+<div>
+    <h4>Employee Detail</h4>
+    <hr />
+       @Html.Partial("~/Views/Shared/_EmployeePersonalTable.cshtml",Model)
+   @* <dl class="row">
+         <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.ProfileURL)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayForImage(model => model.ProfileURL,Model==null ? null : Model.ProfileURL, "img img-100-150")
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.FatherName)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.FatherName)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CNIC)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.CNIC)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CNICFrontURL)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayForImage(model => model.CNICFrontURL,Model==null ? null :Model.CNICFrontURL,"img img-200-100")
+            
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CNICBackURL)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayForImage(model => model.CNICBackURL, Model==null ? null :Model.CNICBackURL,"img img-200-100")
+        </dd>
+       
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.DOB)
+            
+        </dt>
+        <dd class = "col-sm-8">
+            @if (Model != null && Model.DOB != null)
+            {
+                x =HRM.Utilities.AgeHelper.CalculateYourAge(Model.DOB.Value);
+                
+            }
+            @x 
+            <br/>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Domicile)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Domicile)
+        </dd>
+    
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.DomicileURL)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayForImage(model => model.DomicileURL,Model==null ? null :Model.DomicileURL,"img img-100")
+        </dd>
+        
+    
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.BloodGroup)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.BloodGroup)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Nationality)
+        </dd>
+
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.MaritalStatus)
+        </dd>
+        
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.PermanentAddress)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.PermanentAddress)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.PostalAddress)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.PostalAddress)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.EmergencyContactNo)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.EmergencyContactNo)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.EmergencContactName)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.EmergencContactName)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.EmergencContactRelation)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.EmergencContactRelation)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.HighestQualificationLevelAtAppointment)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.HighestQualificationLevelAtAppointment)
+        </dd>
+  
+     
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.PersonalFileNo)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.PersonalFileNo)
+        </dd>
+ 
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CurrentDesignation)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.CurrentDesignation)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CurrentPostingBranch)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.CurrentPostingBranch)
+        </dd>
+ 
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CurrentPlacePostingBench)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.CurrentPlacePostingBench)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CurrentPayScale)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.CurrentPayScale)
+        </dd>
+   
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CurrentPaySlipURL)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayForImage(model => model.CurrentPaySlipURL,Model==null ? null :Model.CurrentPaySlipURL,"img img-100")
+        </dd>
+        *@
+    
+    </dl>
+</div>

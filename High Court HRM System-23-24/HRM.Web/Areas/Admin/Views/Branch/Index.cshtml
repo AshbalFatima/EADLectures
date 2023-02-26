@@ -1,0 +1,116 @@
+﻿@model IEnumerable<HRM.Models.ViewModels.BranchVM>
+
+@{
+
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    int i = 0;
+    int total = Model.Count();
+}
+@section Styles
+{
+    <style>
+        .root{
+            background-color:#231f20;
+            color:white;
+            
+        }
+        .parent-0
+        {
+            background-color:#58595b;
+            margin-left:5px
+
+        }
+        .parent-1
+        {
+            background-color:#808285;
+            margin-left:10px
+        }
+        .parent-2
+        {
+            background-color:#A7A9AC;
+            margin-left:15px
+        }
+        .parent-3
+        {
+            background-color:#D1D3D4;
+            margin-left:20px
+        }
+        .parent-4
+        {
+            
+            background-color:#E6E7E8;
+            margin-left:25px
+        }
+    </style>
+}
+
+<h4>Branches Details</h4>
+<hr />
+
+<div class="col-12 rt-overflow">
+   <table class="table table-responsive">
+        <tr>
+                <td></td>
+                <td>Branch Name </td>
+                <td>
+                    Order
+                </td>
+                <td>       
+                    Action
+                </td>
+                
+           </tr>
+       @foreach(var item in Model)
+       {
+           <tr class="@item.ChildClasses @item.ParentClasses @(item.ParentClasses.Contains("root")?"":"hi") ">
+               <td><button  class="@item.ChildClasses @item.ParentClasses clicking" parent="@item.ParentClasses" child="@item.ChildClasses">
+                   <i class="bi bi-arrows-expand"></i>
+                   <i class="bi bi-caret-right"></i>
+               </button></td>
+                <td>@item.BranchName</td>
+                <td>
+                    @if(i!=0){
+                        <a asp-action="UpdateOrder" asp-controller="Branch" asp-area="Admin" asp-route-id="@item.Id" asp-route-up="true"  class="btn-xs btn-success"> <i class="bi bi-arrow-up-square"></i> Move Up</a>
+                    }
+                    |
+                    @if(i+1!=total)
+                    {
+                        <a asp-action="UpdateOrder" asp-controller="Branch" asp-area="Admin" asp-route-id="@item.Id" asp-route-up="false" class="btn-xs btn-success"><i class="bi bi-arrow-down-square"></i>Move Down</a>
+                    }
+                    
+                    @{
+
+                        i++;
+                    }
+                    
+                </td>
+                <td>       
+                    <a asp-action="Edit" asp-controller="Branch" asp-area="Admin" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> 
+                    
+                </td>
+                
+           </tr>
+       }
+   </table>
+   
+</div>
+
+@section Scripts
+{
+    <script>
+        $( document ).ready(function() {
+    $('.hi').hide();
+
+
+    $('.clicking').click(function() {
+        console.log('testing collapse');
+        var cl = $(this).attr('parent');
+            $(this).closest('tr').nextUntil('.'+cl).toggle("slow");       
+        });
+
+
+});
+    </script>
+
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BSCSF19MVCCore.props" />
+</Project>

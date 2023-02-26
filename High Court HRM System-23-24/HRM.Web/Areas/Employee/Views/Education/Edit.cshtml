@@ -1,0 +1,473 @@
+﻿@model HRM.Models.ViewModels.QualificationVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+@{
+
+
+
+
+
+}
+<h1>Edit</h1>
+
+<h4>Qualification</h4>
+<hr />
+<div class="row">
+    <div class="">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="EmployeeId" />
+            @*<input type="hidden" asp-for="QualificationTime" />*@
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="QualificationTime" class="control-label"></label>
+                        @Html.DropDownListFor(t=>t.QualificationTime ,((List<SelectListItem>)ViewBag.Times) , "Select" ,new {@class="form-control", id="QualificationTime"})
+                        <span asp-validation-for="QualificationTime" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group form-check" id="divIsPlacedOnRecord"
+                         @*( !Model.IsPlacedOnRecord || Model.QualificationTime==null || (Model.QualificationTime!=null && Model.QualificationTime.Trim() =="" )*@
+                         @(( Model.QualificationTime !=null && Model.QualificationTime=="After Joining") ? "":"style=display:none;" )>
+                        @*                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="IsPlacedOnRecord" id="IsPlacedOnRecord" /> @Html.DisplayNameFor(model => model.IsPlacedOnRecord)
+
+                            </label>*@
+                        <label asp-for="IsPlacedOnRecord" class="control-label"></label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input " id="IsPlacedOnRecord" name="IsPlacedOnRecord" value="true" id="" @(Model.IsPlacedOnRecord?"checked":"")>
+                            <label class="form-check-label" for="IsPlacedOnRecord">Yes</label>
+                         </div> <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input form-check-inline" id="radio2" name="IsPlacedOnRecord" value="false" @(Model.IsPlacedOnRecord?"":"checked")>
+                            <label class="form-check-label" for="radio2">No</label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="form-group form-check" id="divNOC" 
+                       @(( Model.QualificationTime !=null && Model.QualificationTime=="After Joining") ? "":"style=display:none;")
+                    >
+                        @*<label class="form-check-label">
+                            <input class="form-check-input" asp-for="NOC" id="NOC" /> @Html.DisplayNameFor(model => model.NOC)
+                        </label>*@
+                        <label asp-for="NOC" class="control-label"></label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input " id="NOC" name="NOC" value="true"  @(Model.NOC?"checked":"")>
+                            <label class="form-check-label" for="NOC">Yes</label>
+                         </div> <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input form-check-inline" id="nocno" name="NOC" value="false" @(Model.NOC?"":"checked")>
+                            <label class="form-check-label" for="nocno">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group" id="divNOCURL" 
+                      @( Model.NOC  ? "":"style=display:none;" )
+                            >
+                        <label asp-for="NOCURL" class="control-label"></label>
+                        @*<input asp-for="Degree_Front_URL" class="form-control" />*@
+                        @Html.EditorForImage(t=>t.NOCURL,Model == null ? null : Model.NOCURL)
+                        <span asp-validation-for="NOCURL" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="DegreeLevelId" class="control-label"></label>
+                        @*<input asp-for="DegreeLevelId" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.DegreeLevelId ,((List<SelectListItem>)ViewBag.DegreeLevels) , "Select" ,new {@class="form-control" , id = "_levels"})
+                        <span asp-validation-for="DegreeLevelId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                    <div class="form-group">
+                        <label asp-for="DegreeId" class="control-label"></label>
+                        @*<input asp-for="DegreeId" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.DegreeId ,((List<SelectListItem>)ViewBag.Degrees) , "Select" ,new {@class="form-control" , id="_degrees" , show="divDegreeOther"})
+
+                        <span asp-validation-for="DegreeId" class="text-danger"></span>
+                    </div>
+                     </div>
+                     <div class="form-group" id="divDegreeOther" @(Model.DegreeName !=null && Model.DegreeName.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                            <label asp-for="DegreeNameOther" class="control-label"></label>
+                            <input asp-for="DegreeNameOther" class="form-control" />
+                            <span asp-validation-for="DegreeNameOther" class="text-danger"></span>
+                     </div>
+                </div>
+                <div class="col">
+                    <div class="form-group" id="divQualitifationTitle" 
+                    @(Model.DegreeLevelId==1 || Model.DegreeLevelId==2 ? "style=display:none" : "")
+                    >
+                        <label asp-for="QualitifationTitle" class="control-label"></label>
+                        <input asp-for="QualitifationTitle" class="form-control" id="QualitifationTitle" />
+                        <span asp-validation-for="QualitifationTitle" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group" id="divBoardUniversity" @(Model.DegreeLevelId==1 || Model.DegreeLevelId==2 ? "style=display:none" : "")
+                    >
+                        <label asp-for="BoardUniversity" class="control-label"></label>
+                        <input asp-for="BoardUniversity" class="form-control" id="BoardUniversity" />
+                        <span asp-validation-for="BoardUniversity" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group" id="divDegree_Front_URL" 
+                    @(Model.DegreeLevelId==1 || Model.DegreeLevelId==2 ? "style=display:none" : "")
+                    >
+                        <label asp-for="Degree_Front_URL" class="control-label"></label>
+                        @*<input asp-for="Degree_Front_URL" class="form-control" />*@
+                        @Html.EditorForImage(t=>t.Degree_Front_URL,Model == null ? null : Model.Degree_Front_URL)
+                        <span asp-validation-for="Degree_Front_URL" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col" id="divYearOfResult" 
+                @(Model.DegreeLevelId==1 || Model.DegreeLevelId==2 ? "style=display:none" : "")
+                >
+                    <div class="form-group">
+                        <label asp-for="YearOfResult" class="control-label"></label>
+                        @*<input asp-for="YearOfResult" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.YearOfResult ,((List<SelectListItem>)ViewBag.Years) , "Select" ,new {@class="form-control" , id="YearOfResult"})
+                        <span asp-validation-for="YearOfResult" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group" id="divMarksTypes"
+                    @(Model.DegreeLevelId==1 || Model.DegreeLevelId==2 ? "style=display:none" : "")
+                    >
+                        <label asp-for="MarksType" class="control-label"></label>
+                        @Html.DropDownListFor(t=>t.MarksType ,((List<SelectListItem>)ViewBag.MarksTypes) , "Select" ,new {@class="form-control" ,id="markstype"})
+                        @*<input asp-for="MarksType" class="form-control" />*@
+                        <span asp-validation-for="MarksType" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col" id="divMarksObtained" @(Model.DegreeLevelId==1 || Model.DegreeLevelId==2 ? "style=display:none" : "")>
+                    <div class="form-group">
+                        <label asp-for="MarksObtained" class="control-label" id="labelMarksObtain"></label>
+                        <input asp-for="MarksObtained" class="form-control" />
+                        <span asp-validation-for="MarksObtained" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col" id="divTotalMarks" @(Model.DegreeLevelId==1 || Model.DegreeLevelId==2 ? "style=display:none" : "") >
+                    <div class="form-group">
+                        <label asp-for="TotalMarks" class="control-label" id="labelTotalMarks"></label>
+                        <input asp-for="TotalMarks" class="form-control" />
+                        <span asp-validation-for="TotalMarks" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col">
+                        <div class="form-group" id="divGradeOrDivisionOrPass"
+                             @if( Model.MarksType == null ||Model.MarksType == "" || Model.MarksType=="N/A" ||Model.MarksType=="Fail" || Model.MarksType== "Pass" || Model.MarksType == "Grade" || Model.MarksType == "Division"){
+                        @Html.Raw("style='display:none;'")
+;}>
+
+                            <label asp-for="GradeOrDivisionOrPass" class="control-label"></label>
+                          
+                            <input asp-for="GradeOrDivisionOrPass" class="form-control" id="GradeOrDivisionOrPass" />
+                            <span asp-validation-for="GradeOrDivisionOrPass" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="form-group">
+                <label asp-for="ResultDate" class="control-label"></label>
+
+                <input type="date" class="form-control" name="ResultDate" value='@(Model.ResultDate.HasValue ?  Model.ResultDate.Value.ToString("yyyy-MM-dd") : "")' />
+                <span asp-validation-for="ResultDate" class="text-danger"></span>
+                </div>*@
+
+
+
+
+
+
+
+
+            @* <div class="form-group">
+                <label asp-for="Degree_Back_URL" class="control-label"></label>
+                <input asp-for="Degree_Back_URL" class="form-control" />
+                <span asp-validation-for="Degree_Back_URL" class="text-danger"></span>
+                </div>*@
+
+
+
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+<script type="text/javascript">
+        (function(jQuery) {
+      $(document).ready(function() {
+
+          //Degree Level and Degrees started
+         $("#_levels").change(function() {
+            var SelVal = $( "#_levels option:selected" ).val();
+
+
+            $.ajax({
+
+                url: "/Employee/Education/GetDegrees/"+SelVal,
+
+                type: "GET",
+                dataType : "json",
+            })
+                .done(function( json ) {
+
+                    let dropdown = $('#_degrees');
+                    dropdown.empty();
+                    dropdown.append('<option>Select</option>');
+                    //  dropdown.prop('selectedIndex', 0);
+                    $.each(json, function (key, entry) {
+                    dropdown.append($('<option></option>').attr('value', entry.id).text(entry.name));
+                    })
+                }).fail(function( xhr, status, errorThrown ) {
+                alert( "Sorry, there was a problem!" );
+                console.log( "Error: " + errorThrown );
+                console.log( "Status: " + status );
+                console.dir( xhr );
+                })
+                // Code to run regardless of success or failure;
+                .always(function( xhr, status ) {
+                    if(SelVal==1)
+                    {
+                        $('#_degrees').val("1").change();
+                         //$("#gate option[value='1']").prop('selected', true);
+                        let t = $('_degrees option:selected').text();
+                        let currentYear= new Date().getFullYear();
+
+                        $('#QualitifationTitle').val("N/A");
+                          $('#BoardUniversity').val("N/A");
+                          $('#GradeOrDivisionOrPass').val("N/A");
+
+
+                          //$('#YearOfResult').val(t).change();
+
+                          $('#YearOfResult option:first').attr("value","1947");
+                          $('#markstype option:first').attr("value","N/A");
+
+
+                            $("#divMarksObtained").hide();
+                            $("#divTotalMarks").hide();
+                            $("#divGradeOrDivisionOrPass").hide();
+                            $("#divMarksTypes").hide();
+                            $("#divYearOfResult").hide();
+                            $("#divDegree_Front_URL").hide();
+                            $("#divBoardUniversity").hide();
+                            $("#divQualitifationTitle").hide();
+
+
+
+                    }
+                    else if(SelVal==2)
+                    {
+                        $('#markstype option:first').attr("value","N/A");
+                          $('#YearOfResult option:first').attr("value","1947");
+                        $("#divMarksObtained").hide();
+                        $("#divTotalMarks").hide();
+                        $("#divGradeOrDivisionOrPass").hide();
+                        $("#divMarksTypes").hide();
+                        $("#divYearOfResult").hide();
+                        $("#divDegree_Front_URL").hide();
+                        $("#divBoardUniversity").hide();
+                        $("#divQualitifationTitle").hide();
+                        $('#QualitifationTitle').val("N/A");
+                        $('#BoardUniversity').val("N/A");
+
+
+                    }else
+                    {
+                       $('#markstype option:first').attr("value","");
+                       $('#YearOfResult option:first').attr("value","");
+                         
+                       $('#markstype option:first').val("").change();
+                       $('#GradeOrDivisionOrPass').val("");
+                        // $('#GradeOrDivisionOrPass').hide();
+                       $('#QualitifationTitle').val("");
+                        $('#BoardUniversity').val("");
+                        $("#divMarksObtained").show();
+                        $("#divTotalMarks").show();
+                       // $("#divGradeOrDivisionOrPass").show();
+                        $("#divMarksTypes").show();
+                        $("#divYearOfResult").show();
+                        $("#divDegree_Front_URL").show();
+                        $("#divBoardUniversity").show();
+                        $("#divQualitifationTitle").show();
+
+                    }
+                });
+
+        });
+          $("#_degrees").change(function() {
+                    let x = $( "#_levels option:selected" ).val();
+                    if(x == 2 || x==1){
+                            let selDeg = $( "#_degrees option:selected" ).val();
+                            let selDegText = $( "#_degrees option:selected" ).text();
+                              //$('#markstype option:first').attr("value",selDeg)
+                              $('#GradeOrDivisionOrPass').val(selDegText);
+                                   $('#QualitifationTitle').val(selDegText);
+                    }
+
+                         var id = $(this).attr('id');
+                        var show = $(this).attr('show');
+
+                        
+                          var s = $( "#"+id+" option:selected" ).val();
+                          var t = $( "#"+id+" option:selected" ).text();
+                          if(s.toUpperCase().includes('OTHER') || t.toUpperCase().includes('OTHER'))
+                          {
+                            $("#"+show).show();
+                          }else
+                          {
+                                $("#"+show).hide();
+                          }
+          });
+            //Degree Level and Degrees ended
+            $('#markstype').change(function()
+            {
+                    $('#GradeOrDivisionOrPass').attr('readonly', false);
+                    var SelVal = $( "#markstype option:selected" ).val();
+                    switch(SelVal)
+                    {
+                               case "CGPA" :
+                                                 $('#divTotalMarks').show();
+                                                $('#divMarksObtained').show();
+                                                $('#labelTotalMarks').text("Total CGPA");
+                                                $('#labelMarksObtain').text("CGPA Obtained");
+
+                                                $('#divGradeOrDivisionOrPass').hide();
+                                                $('#GradeOrDivisionOrPass').val("N/A");
+                                                break;
+
+                               case "Marks":
+                                                 $('#divTotalMarks').show();
+                                                $('#divMarksObtained').show();
+                                                 $('#labelTotalMarks').text("Total Marks");
+                                                $('#labelMarksObtain').text("Marks Obtained");
+                                                $('#divGradeOrDivisionOrPass').hide();
+                                                $('#GradeOrDivisionOrPass').val("N/A");
+                                                break;
+
+                               case "Division" :
+                                                $('#divTotalMarks').hide();
+                                                $('#divMarksObtained').hide();
+                                                $('#divGradeOrDivisionOrPass').show();
+                                                $('#GradeOrDivisionOrPass').val("");
+                                                break;
+
+                               case "Grade" :
+                                                $('#divTotalMarks').hide();
+                                                $('#divMarksObtained').hide();
+                                                $('#divGradeOrDivisionOrPass').show();
+                                                $('#GradeOrDivisionOrPass').val("");
+                                                break;
+
+                               case "Pass" :
+                                                $('#divTotalMarks').hide();
+                                                $('#divMarksObtained').hide();
+                                                $('#divGradeOrDivisionOrPass').show();
+
+
+
+
+
+                                                $('#GradeOrDivisionOrPass').val("Pass");
+                                                $('#GradeOrDivisionOrPass').attr('readonly', true);
+                                                break;
+
+                               case "Fail" :
+                                                $('#divTotalMarks').hide();
+                                                $('#divMarksObtained').hide();
+                                                $('#divGradeOrDivisionOrPass').show();
+                                                $('#GradeOrDivisionOrPass').val("Fail");
+                                                $('#GradeOrDivisionOrPass').val("Fail");
+                                                 $('#GradeOrDivisionOrPass').attr('readonly', true);
+                                                break;
+
+
+                    }
+            });
+            $('#QualificationTime').change(function()
+            {
+                const selVal = $( "#QualificationTime option:selected" ).val();
+                if(selVal=="After Joining"){
+                    console.log('showing');
+                        $('#divIsPlacedOnRecord').show();
+                    $('#divNOC').show();
+
+                }else{
+                //
+
+                     $('#divIsPlacedOnRecord').hide();
+                    $('#divNOC').hide();
+                    $('#divNOCURL').hide();
+                }
+            });
+            $('#NOC').click(function ()
+            {
+
+                if ($('#NOC').is(':checked') == true) {
+                        $('#divNOCURL').show();
+
+                }else
+                {
+
+                     $('#divNOCURL').hide();
+                }
+            });
+            $('#nocno').click(function ()
+            {
+
+                if ($('#nocno').is(':checked') == true) {
+                      
+                      $('#divNOCURL').hide();
+                }else
+                {
+
+                   
+               
+                }
+            });
+            saveService
+      });
+    })(jQuery);
+    function hideAll()
+              {
+
+              }
+              hideAll();
+</script>
+}

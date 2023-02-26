@@ -1,0 +1,39 @@
+﻿body {
+}
+.customImage {
+    height: 100px;
+    width: 99px;
+    border: 1px;
+}
+
+.customImageUpload {
+    width: 100px;
+    position: absolute;
+    z-index: 9;
+    bottom: 3px;
+    left: 3px;
+    margin-left: 2px;
+}
+
+.customImageDiv {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    width: 110px;
+    height: 110px;
+}
+.rt-overflow-a{
+overflow:auto;
+}
+.rt-overflow-x {
+    overflow-x: auto;
+}
+.rt-overflow-y {
+    overflow-y: auto;
+}
+#rt_extension_button {
+}

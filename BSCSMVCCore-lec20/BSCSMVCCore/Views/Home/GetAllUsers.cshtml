@@ -1,0 +1,54 @@
+﻿@model IEnumerable<BSCSMVCCore.Models.User>
+@{
+
+}
+<h1> Asp. NET CORE</h1>
+
+<p>Welcome to @ViewBag.Page</p>
+@*<ul>
+@foreach(var item in ViewBag.Users)
+    {
+        <li>@item</li>
+    }
+</ul>
+<hr/>
+@ViewData["Temp"];
+@foreach (var item in (List<string>)TempData["Clsasses"])
+{
+
+}*@
+
+<table class="table table-responsive table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Name</th>
+        <th>Password</th>
+    </tr>
+    @foreach (User item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Email</td>
+            <td>@item.Name</td>
+            <td>@for (int i = 0; i < item.Password.Length; i++)
+                {
+                   Html.Raw("*"); 
+                }        
+                </td>
+        </tr>
+    }
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+

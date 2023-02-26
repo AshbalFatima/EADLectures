@@ -1,0 +1,17 @@
+E:\Video Lecture\TMS\TMS.UI\bin\Debug\TMS.UI.exe.config
+E:\Video Lecture\TMS\TMS.UI\bin\Debug\TMS.UI.exe
+E:\Video Lecture\TMS\TMS.UI\bin\Debug\TMS.UI.pdb
+E:\Video Lecture\TMS\TMS.UI\bin\Debug\EntityFramework.dll
+E:\Video Lecture\TMS\TMS.UI\bin\Debug\EntityFramework.SqlServer.dll
+E:\Video Lecture\TMS\TMS.UI\bin\Debug\EntityFramework.xml
+E:\Video Lecture\TMS\TMS.UI\bin\Debug\EntityFramework.SqlServer.xml
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.csproj.AssemblyReference.cache
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.csproj.SuggestedBindingRedirects.cache
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.FormDashboard.resources
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.FormLogin.resources
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.Properties.Resources.resources
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.csproj.GenerateResource.cache
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.csproj.CoreCompileInputs.cache
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.csproj.CopyComplete
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.exe
+E:\Video Lecture\TMS\TMS.UI\obj\Debug\TMS.UI.pdb

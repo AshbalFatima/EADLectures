@@ -1,0 +1,49 @@
+﻿@using HRM.Utilities
+@model HRM.Models.ViewModels.EmployeeDataVM
+@{
+    //Layout = "_LayoutEmployee";
+}
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div>
+    <h1 style="text-align:center; text-decoration:underline; font-weight:bold">DATA FORM</h1>
+    <hr/>
+        @Html.Partial("~/Views/Shared/_EmployeePersonalTable.cshtml",Model.Employee)
+    
+    @if (Model.Qualifications.Count > 0)
+    {
+        @Html.Partial("~/Views/Shared/Employee/_EmployeeEducationTable.cshtml",Model.Qualifications)
+    }else
+    {
+        <div>
+            <a  href="/Employee/Education/Edit" class="text-danger">No Qualification Detail Found! Click to create</a>
+        </div>
+    }
+
+     @if (Model.Appointments.Count > 0)
+    {
+        @Html.Partial("~/Views/Shared/Employee/_EmployeeAppointmentTable.cshtml",Model.Appointments)
+    }else
+    {
+        <div>
+            <a  href="/Employee/Appointment/Create" class="text-danger">No Appointment Detail Found! Click to create</a>
+        </div>
+    }
+
+
+     @if (Model.ServiceHistories.Count > 0)
+    {
+      @Html.Partial("~/Views/Shared/Employee/_EmployeeServiceHistoryTable.cshtml",Model.ServiceHistories)
+    }else
+    {
+        <div>
+            <a  href="/Employee/ServiceHistory/Create" class="text-warning">No Previous Service Detail Found! Click to create</a>
+        </div>
+    }
+
+     
+    
+     
+</div>

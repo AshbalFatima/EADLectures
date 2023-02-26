@@ -1,0 +1,81 @@
+﻿@model IEnumerable<HRM.Models.ViewModels.DesignationVM>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    int i=1;
+    int total = Model.Count();
+}
+@section Styles {
+    <link href="~/lib/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
+}
+
+
+<p>
+    <a asp-action="Create" asp-area="Admin" asp-controller="Designation">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Desination</th>
+            <th></th>
+            <th>BPS</th>
+            <th class="col-md-2 text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.DesignationTitle</td>
+                <td>@item.BPSNAME</td>
+                 <td>
+              @*      @if(i!=0){
+                        <a asp-action="UpdateOrder" asp-controller="Designation" asp-area="Admin" asp-route-id="@item.Id" asp-route-up="true"  class="btn-xs btn-success">Move Up</a>
+                    }
+                    |
+                    @if(i+1!=total)
+                    {
+                        <a asp-action="UpdateOrder" asp-controller="Designation" asp-area="Admin" asp-route-id="@item.Id" asp-route-up="false" class="btn-xs btn-success">Move Down</a>
+                    }
+                    
+                    @{
+
+                        i++;
+                    }*@
+                    
+                </td>
+                
+                <td class="text-center">
+                    <form asp-action="Delete" asp-route-id="@item.Id" method="post">
+                        <a asp-action="Edit" asp-area="Admin" asp-controller="Designation" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a> 
+                   @*     <button type="submit" class="btn btn-sm btn-danger">
+                            Delete
+                        </button>*@
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script src="~/lib/datatable/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatable/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var table = $('.table').DataTable({
+                columns: [
+                    null,
+                    null,
+                    null,
+                    { orderable: false }
+                ]
+            });
+            $(table.table().container()).removeClass('form-inline');
+        });
+    </script>
+}

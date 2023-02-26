@@ -1,0 +1,12 @@
+E:\Video Lecture\VS_APis\Apis.Common\bin\Debug\net6.0\Apis.Common.deps.json
+E:\Video Lecture\VS_APis\Apis.Common\bin\Debug\net6.0\Apis.Common.dll
+E:\Video Lecture\VS_APis\Apis.Common\bin\Debug\net6.0\Apis.Common.pdb
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\Apis.Common.csproj.AssemblyReference.cache
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\Apis.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\Apis.Common.AssemblyInfoInputs.cache
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\Apis.Common.AssemblyInfo.cs
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\Apis.Common.csproj.CoreCompileInputs.cache
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\Apis.Common.dll
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\refint\Apis.Common.dll
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\Apis.Common.pdb
+E:\Video Lecture\VS_APis\Apis.Common\obj\Debug\net6.0\ref\Apis.Common.dll

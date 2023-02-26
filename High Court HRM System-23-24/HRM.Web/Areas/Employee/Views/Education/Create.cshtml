@@ -1,0 +1,95 @@
+﻿@model HRM.Models.Qualification
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="QualitifationTitle" class="control-label"></label>
+                <input asp-for="QualitifationTitle" class="form-control" />
+                <span asp-validation-for="QualitifationTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearOfResult" class="control-label"></label>
+                <input asp-for="YearOfResult" class="form-control" />
+                <span asp-validation-for="YearOfResult" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultDate" class="control-label"></label>
+                <input asp-for="ResultDate" class="form-control" />
+                <span asp-validation-for="ResultDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MarksObtained" class="control-label"></label>
+                <input asp-for="MarksObtained" class="form-control" />
+                <span asp-validation-for="MarksObtained" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalMarks" class="control-label"></label>
+                <input asp-for="TotalMarks" class="form-control" />
+                <span asp-validation-for="TotalMarks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MarksType" class="control-label"></label>
+                <input asp-for="MarksType" class="form-control" />
+                <span asp-validation-for="MarksType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherMarkObtain" class="control-label"></label>
+                <input asp-for="OtherMarkObtain" class="form-control" />
+                <span asp-validation-for="OtherMarkObtain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherMarkTotal" class="control-label"></label>
+                <input asp-for="OtherMarkTotal" class="form-control" />
+                <span asp-validation-for="OtherMarkTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BoardUniversity" class="control-label"></label>
+                <input asp-for="BoardUniversity" class="form-control" />
+                <span asp-validation-for="BoardUniversity" class="text-danger"></span>
+            </div>
+          
+            <div class="form-group">
+                <label asp-for="Degree_Front_URL" class="control-label"></label>
+                <input asp-for="Degree_Front_URL" class="form-control" />
+                <span asp-validation-for="Degree_Front_URL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Degree_Back_URL" class="control-label"></label>
+                <input asp-for="Degree_Back_URL" class="form-control" />
+                <span asp-validation-for="Degree_Back_URL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QualificationTime" class="control-label"></label>
+                <input asp-for="QualificationTime" class="form-control" />
+                <span asp-validation-for="QualificationTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DegreeId" class="control-label"></label>
+                <input asp-for="DegreeId" class="form-control" />
+                <span asp-validation-for="DegreeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DegreeLevelId" class="control-label"></label>
+                <input asp-for="DegreeLevelId" class="form-control" />
+                <span asp-validation-for="DegreeLevelId" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsVerified" /> @Html.DisplayNameFor(model => model.IsVerified)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerifiedBy" class="control-label"></label>
+                <input asp-for="VerifiedBy" class="form-control" />
+                <span asp-validation-for="VerifiedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

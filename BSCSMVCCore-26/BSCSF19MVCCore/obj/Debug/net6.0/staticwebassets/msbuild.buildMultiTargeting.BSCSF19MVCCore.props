@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BSCSF19MVCCore.props" />
+</Project>

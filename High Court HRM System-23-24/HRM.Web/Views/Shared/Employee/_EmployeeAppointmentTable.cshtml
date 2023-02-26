@@ -1,0 +1,89 @@
+﻿@using HRM.Utilities
+@model IEnumerable<HRM.Models.ViewModels.AppointmentVM>
+
+<h4>Appointment Details (Lahore High Court)</h4>
+<hr/>
+<div class="col-12 rt-overflow">
+<table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentAs)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentBPS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfAppointmentLetter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfChargeAssumption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppiontmentLetterURL)
+            </th>
+            
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Quota)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.ModeOfAppointment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.JoinThroughProperChannel)
+            </th>
+            
+            
+           
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppointmentAs)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.AppointmentBPS)
+            </td>
+            
+            
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfAppointmentLetter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfChargeAssumption)
+            </td>
+            <td>
+                @Html.DisplayForImage(modelItem => item.AppiontmentLetterURL,item.AppiontmentLetterURL)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Quota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModeOfAppointment)
+            </td>
+             <td>
+                @(item.JoinThroughProperChannel?"Yes":"No")
+                <br/>
+                Last Service: 
+                <br/>
+                    @if (item.JoinThroughProperChannel)
+                    {
+                        <a href="/Employee/ServiceHistor/Details/@item.ServiceHistoryId" class="">@item.ServiceHistoryText</a>
+                    }
+                </td>
+        
+            
+       
+        </tr>
+}
+    </tbody>
+</table>
+</div>

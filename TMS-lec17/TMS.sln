@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMS.UI", "TMS.UI\TMS.UI.csproj", "{F46FEE83-7419-4BDD-AF5C-1B65E32832D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncConsole", "AsyncConsole\AsyncConsole.csproj", "{F20CD7DD-68DA-4CE6-8BC3-9851EF56BC26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F46FEE83-7419-4BDD-AF5C-1B65E32832D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46FEE83-7419-4BDD-AF5C-1B65E32832D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46FEE83-7419-4BDD-AF5C-1B65E32832D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46FEE83-7419-4BDD-AF5C-1B65E32832D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20CD7DD-68DA-4CE6-8BC3-9851EF56BC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20CD7DD-68DA-4CE6-8BC3-9851EF56BC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20CD7DD-68DA-4CE6-8BC3-9851EF56BC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20CD7DD-68DA-4CE6-8BC3-9851EF56BC26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E6437EA-950A-4DAB-9B33-43948DA56D68}
+	EndGlobalSection
+EndGlobal

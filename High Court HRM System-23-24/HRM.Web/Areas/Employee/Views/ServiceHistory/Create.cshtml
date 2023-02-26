@@ -1,0 +1,124 @@
+﻿@model HRM.Models.ViewModels.ServiceHistoryVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h4>Previous Government Service History Other than Lahore High Court (If Any)</h4>
+<hr />
+<div class="row">
+    <div class="">
+
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmployeeId"/>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="Designation" class="control-label"></label>
+                        <input asp-for="Designation" class="form-control" />
+                        <span asp-validation-for="Designation" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                   <div class="form-group">
+                        <label asp-for="PayScaleId" class="control-label"></label>
+                        @*<input asp-for="PayScaleId" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.PayScaleId,((List<SelectListItem>)ViewBag.BPS),"Select",new {@class="form-control"})
+                        <span asp-validation-for="PayScaleId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="Deparment" class="control-label"></label>
+                        <input asp-for="Deparment" class="form-control" />
+                        <span asp-validation-for="Deparment" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="ServiceType" class="control-label"></label>
+                        @*<input asp-for="ServiceType" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.ServiceType,((List<SelectListItem>)ViewBag.ServiceTypes),"Select",new {@class="form-control"})
+                        <span asp-validation-for="ServiceType" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="From" class="control-label"></label>
+                        @*<input asp-for="From" class="form-control" />*@
+                        @*<input type="date" class="form-control" name="From" value="@(Model.From!=null?Model.From.Value.ToString("yyyy-MM-dd"): "")" />*@
+                        <input type="hidden" name="From_FOR" id="From" value="@(Model.From.HasValue? Model.From.Value.ToString("dd-MMM-yyyy") : "" )"/>
+                        <div class="input-group date" id="DOBPicker">
+                        
+                            <input type="text" class="form-control" onchange="TextChange('fromdate','From')" id="fromdate" readonly="true" value="@(Model.From.HasValue? Model.From.Value.ToString("dd-MMM-yyyy") : "" )"/>
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-light d-block">
+                                <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <span asp-validation-for="From" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="To" class="control-label"></label>
+                        @*<input asp-for="To" class="form-control" />*@
+                        @*<input type="date" class="form-control" name="To" value="@(Model.To!=null?Model.To.Value.ToString("yyyy-MM-dd"): "")" />*@
+                        <input type="hidden" name="To_FOR" id="To" value="@(Model.To.HasValue? Model.To.Value.ToString("dd-MMM-yyyy") : "" )"/>
+                        <div class="input-group date" id="DOBPicker">
+                        
+                            <input type="text" class="form-control" onchange="TextChange('Todate','To')" id="Todate" readonly="true" value="@(Model.To.HasValue? Model.To.Value.ToString("dd-MMM-yyyy") : "" )"/>
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-light d-block">
+                                <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <span asp-validation-for="To" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="JoinThroughProperChannel" /> @Html.DisplayNameFor(model => model.JoinThroughProperChannel)
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="RelievingURL" class="control-label"></label>
+                        @*<input asp-for="To" class="form-control" />*@
+                        @Html.EditorForImage(t=>t.RelievingURL,Model.RelievingURL)
+                        
+                        <span asp-validation-for="RelievingURL" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        
+           
+            
+            
+            
+            
+          
+            
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

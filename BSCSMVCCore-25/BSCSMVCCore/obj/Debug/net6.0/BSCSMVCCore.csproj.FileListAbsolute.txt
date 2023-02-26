@@ -1,0 +1,8 @@
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.csproj.AssemblyReference.cache
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.AssemblyInfoInputs.cache
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.AssemblyInfo.cs
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.csproj.CoreCompileInputs.cache
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.RazorAssemblyInfo.cache
+C:\Users\Aqib Amin\source\repos\BSCSMVCCore\BSCSMVCCore\obj\Debug\net6.0\BSCSMVCCore.RazorAssemblyInfo.cs

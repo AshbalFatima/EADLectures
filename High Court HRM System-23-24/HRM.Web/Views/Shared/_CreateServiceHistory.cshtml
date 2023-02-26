@@ -1,0 +1,110 @@
+﻿@using HRM.Models.ViewModels
+@model HRM.Models.ViewModels.ServiceHistoryVM
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    List<ServiceHistoryVM> servies = new List<ServiceHistoryVM>();
+    if (ViewBag.ServiceHistories != null)
+    {
+        servies = (List<ServiceHistoryVM>)ViewBag.ServiceHistories;
+    }
+}
+<form asp-action="CreateAjax" asp-controller="ServiceHsitory" id="serviceForm">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Previous Service Detail</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+
+        <div>
+            @if(servies.Count>0)
+            {
+                int count = 0;
+                <table class="table table-responsive table-stripped">
+                    <tr class="bg-secondary">
+                        <th>Choose one</th>
+                
+                        <th>Deparment</th>
+                        <th>Designation</th>
+                        <th>Pay Scale</th>
+                        <th>Date</th>
+                    </tr>
+                    
+                @foreach (ServiceHistoryVM item in servies)
+                {
+                    <tr>
+                        <tr>
+                            <th><a href="javascript:void(0)" class="btn btn-success choosed" data-id="@item.Id.Value" data-name="@item.Designation in  @item.Deparment">Choose</a></th>
+                           
+                            <th>@item.Designation</th>
+                            <th>@item.Deparment</th>
+                            <th>@item.PayScale</th>
+                            <th>@item.From.Value.ToString("dd-MMM-yyyy") - @item.To.Value.ToString("dd-MMM-yyyy")</th>
+                        </tr>
+                    </tr>
+                }
+                </table>
+            }
+            else
+            {
+                <p class="text-danger">First You need to add Service History other than High Court, Click the button to add Service History other than High Court.</p>
+                <span><a href="/Employee/ServiceHistory/Create" class="btn-success btn">Create Previous Service to Choose</a></span>
+            }
+            
+        </div>
+        <div class="d-none">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmployeeId"/>
+            <div class="form-group">
+                <label asp-for="Designation" class="control-label"></label>
+                <input asp-for="Designation" class="form-control" />
+                <span asp-validation-for="Designation" class="text-danger"></span>
+            </div>
+        
+            <div class="form-group">
+                <label asp-for="PayScaleId" class="control-label"></label>
+                @*<input asp-for="PayScaleId" class="form-control" />*@
+                @Html.DropDownListFor(t=>t.PayScaleId,((List<SelectListItem>)ViewBag.BPS),"Select",new {@class="form-control"})
+                <span asp-validation-for="PayScaleId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Deparment" class="control-label"></label>
+                <input asp-for="Deparment" class="form-control" />
+                <span asp-validation-for="Deparment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServiceType" class="control-label"></label>
+                @*<input asp-for="ServiceType" class="form-control" />*@
+                @Html.DropDownListFor(t=>t.ServiceType,((List<SelectListItem>)ViewBag.ServiceTypes),"Select",new {@class="form-control"})
+                <span asp-validation-for="ServiceType" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="JoinThroughProperChannel" /> @Html.DisplayNameFor(model => model.JoinThroughProperChannel)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="From" class="control-label"></label>
+                @*<input asp-for="From" class="form-control" />*@
+                <input type="date" class="form-control" name="From" value="@(Model.From!=null?Model.From.Value.ToString("yyyy-MM-dd"): "")" />
+                <span asp-validation-for="From" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="To" class="control-label"></label>
+                @*<input asp-for="To" class="form-control" />*@
+                <input type="date" class="form-control" name="To" value="@(Model.To!=null?Model.To.Value.ToString("yyyy-MM-dd"): "")" />
+                <span asp-validation-for="To" class="text-danger"></span>
+            </div>
+            
+        </div>
+           @* <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+       *@
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        @*<button type="button" class="btn btn-primary saveService">Save changes</button>*@
+    </div>
+</form>

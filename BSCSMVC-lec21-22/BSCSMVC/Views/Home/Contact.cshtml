@@ -1,0 +1,50 @@
+﻿@model BSCSMVC.Models.Inquiry
+@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+@Html.ActionLink("Goto Home","Index","Home")
+
+
+<form action="/Home/SubmitInquiry" method="get">
+    <table class="table table-responsive">
+        <tr>
+            <td>Enter Your Email</td>
+            <td>
+                @Html.TextBoxFor(t=>t.Email,new { required="true", @class="form-control" ,id="email" , placeholder="e.g. example@gmail.com" })
+                @*<input type="text" name="Email" class="form-control" id="email" placeholder="example@gmail.com"/>*@
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Your Name</td>
+            
+            <td>
+            @Html.TextBoxFor(t=>t.FullName ,new { @class="form-control"})
+            @*<input type="text" name="name"  class="form-control" /></td>*@
+        </tr>
+        <tr>
+            <td>Message</td>
+            <td>
+                @Html.TextAreaFor(t=>t.Message)
+                @*<textarea name="message"></textarea>*@
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" />
+            </td>
+        </tr>
+    </table>
+</form>
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>

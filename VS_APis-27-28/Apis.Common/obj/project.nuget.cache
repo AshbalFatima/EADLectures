@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "EsiTgiVsmNDSYNsGRO1aMoGWU22Nf3akEyRCbxo2Bqfrrkc4VrsKlQJ9kWCNTlwfauqeWucpBpcS1dBO7uaSGw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Aqib Amin\\Desktop\\VS_APis\\Apis.Common\\Apis.Common.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.Extensions.Configuration.Binder"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+﻿@using HRM.Utilities
+@model HRM.Models.ViewModels.EmployeeVM
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+ <div class="float-end">
+     Passport Photo
+        @Html.DisplayForImage(model => model.ProfileURL,Model==null ? null : Model.ProfileURL, "img img-100-150")
+    </div>
+    <table class="table table-bordered">
+        
+        
+        <tr>
+            <td style="width:25%">@Html.DisplayNameFor(model => model.PersonalFileNo)
+            <br/>
+            (for office use only)</td>
+            <td colspan="2"> @Html.DisplayFor(model => model.PersonalFileNo)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.FullName)</td>
+            <td colspan="2"> @Html.DisplayFor(model => model.FullName)</td>
+        </tr>
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.PersonnelNumber)</td>
+            <td colspan="2"> @Html.DisplayFor(model => model.PersonnelNumber)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.CurrentDesignation)</td>
+            <td colspan="2"> @Html.DisplayFor(model => model.CurrentDesignation)</td>
+        </tr>
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.CurrentPayScale)</td>
+            <td> @Html.DisplayFor(model => model.CurrentPayScale)</td>
+            <td> @Html.DisplayForImage(model => model.CurrentPaySlipURL ,Model==null ? null : Model.CurrentPaySlipURL , "img img-100-150")</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.CurrentPostingBranch)</td>
+            <td colspan="2"> @Html.DisplayFor(model => model.CurrentPostingBranch)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.CurrentPlacePostingBench)</td>
+            <td colspan="2"> @Html.DisplayFor(model => model.CurrentPlacePostingBench)</td>
+        </tr>
+        
+    </table>
+    <h1>Personal Details</h1>
+    <table class="table table-bordered">
+        <tr class="d-none">
+            <td style="width:25%">
+            <td style="width:25%">
+            <td style="width:25%">
+            <td style="width:25%">
+        </tr>                
+
+        <tr>
+            <td style="width:25%">@Html.DisplayNameFor(model => model.FullName)</td>
+            <td colspan="3"> @Html.DisplayFor(model => model.FullName)</td>
+        </tr>
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.FatherName)</td>
+            <td colspan="3"> @Html.DisplayFor(model => model.FatherName)</td>
+        </tr>
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.CNIC)</td>
+            <td>@Html.DisplayFor(model => model.CNIC)</td>
+            <td>CNIC Front : @Html.DisplayForImage(model => model.CNICFrontURL ,Model==null ? null : Model.CNICFrontURL , "img img-100-150")</td>
+            <td>CNIC Back : @Html.DisplayForImage(model => model.CNICBackURL ,Model==null ? null : Model.CNICBackURL, "img img-100-150")</td>
+        </tr>
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.DOB)</td>
+            <td colspan="3"> @Html.DisplayFor(model => model.DOB)
+            <br/>
+            <p class="text-warning">(you are instructed to enter date of birth which was provided at the time of Appointment in accordance with your service book/pay roll.)</p></td>
+        </tr>
+         <tr>
+           <td>@Html.DisplayNameFor(model => model.Domicile)
+           <br/>
+           <p class="text-warning">(at the time of appointment)</p></td>
+            <td>@Html.DisplayFor(model => model.Domicile)</td>
+            <td colspan="2"> @Html.DisplayForImage(model => model.DomicileURL ,Model==null ? null : Model.DomicileURL , "img img-100-150")</td>
+        </tr>
+        
+
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.Gender)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.Gender)</td>
+        </tr>
+
+
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.Religion)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.Religion)</td>
+            
+        </tr>
+
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.Nationality)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.Nationality)</td>
+        </tr>
+
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.MaritalStatus)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.MaritalStatus)</td>
+        </tr>
+
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.PermanentAddress)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.PermanentAddress)</td>
+        </tr>
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.PostalAddress)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.PostalAddress)</td>
+        </tr>
+
+
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.SelfContactNumber)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.SelfContactNumber)</td>
+        </tr>
+
+        <tr >
+           <td rowspan="2">Contact <br/>
+               (In case of emergency)</td>
+             <td>Name</td>
+           <td>Relation with the employee</td>
+           <td>Contact No.</td>
+            
+        </tr>
+
+ 
+        <tr>
+           <td>@Html.DisplayFor(model => model.EmergencContactName)</td>
+           <td>@Html.DisplayFor(model => model.EmergencContactRelation)</td>
+           <td>@Html.DisplayFor(model => model.EmergencyContactNo)</td>
+            
+        </tr>
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.Email)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.Email)</td>
+        </tr>
+
+        <tr>
+           <td>@Html.DisplayNameFor(model => model.HighestQualificationLevelAtAppointment)</td>
+            <td colspan="3">@Html.DisplayFor(model => model.HighestQualificationLevelAtAppointment)</td>
+        </tr>
+
+        
+    </table>

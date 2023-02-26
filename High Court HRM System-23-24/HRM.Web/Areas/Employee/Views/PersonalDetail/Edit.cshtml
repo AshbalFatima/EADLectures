@@ -1,0 +1,411 @@
+﻿@model HRM.Models.ViewModels.EmployeeVM
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+
+        <div class="info-section">
+            <h4 class="title">Official Record</h4>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="PersonalFileNo" class="control-label">(For Office Use Only)</label>
+                        <input readonly="true" class="form-control" value="Personal File #" />
+                        <span asp-validation-for="PersonalFileNo" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="form-group">
+                        <label asp-for="CNIC" class="control-label"></label>
+                        <input asp-for="CNIC" class="form-control" readonly="true" />
+                        <span asp-validation-for="CNIC" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="SelfContactNumber" class="control-label"></label>
+                        <input asp-for="SelfContactNumber" class="form-control" readonly="true" />
+                        <span asp-validation-for="SelfContactNumber" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="PersonnelNumber" class="control-label"></label>
+                        <input asp-for="PersonnelNumber" class="form-control" readonly="true" />
+                        <span asp-validation-for="PersonnelNumber" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <div>
+                    <div class="form-group">
+                        <label asp-for="CurrentDesignationId" class="control-label"></label>
+                        @*<input asp-for="CurrentDesignationId" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.CurrentDesignationId ,((List<SelectListItem>)ViewBag.Designations) , "Select" ,new {@class="form-control" , id="CurrentDesignation",show="divCurrentDesignationOther"})
+                        <span asp-validation-for="CurrentDesignationId" class="text-danger"></span>
+                    </div>
+                     </div>
+                 <div class="form-group" id="divCurrentDesignationOther" @(Model.CurrentDesignation!=null && Model.CurrentDesignation.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="CurrentDesignationOther" class="control-label"></label>
+                        <input asp-for="CurrentDesignationOther" class="form-control" />
+                        <span asp-validation-for="CurrentDesignationOther" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="CurrentPayScaleId" class="control-label"></label>
+                        @*<input asp-for="CurrentPayScaleId" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.CurrentPayScaleId ,((List<SelectListItem>)ViewBag.BPS) , "Select" ,new {@class="form-control"})
+                        <span asp-validation-for="CurrentPayScaleId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="CurrentPostingBranch" class="control-label"></label>
+                        @*<input asp-for="CurrentPostingBranch" class="form-control" />*@
+                          @Html.DropDownListFor(t=>t.CurrentPostingBranchId ,((List<SelectListItem>)ViewBag.Branches) , "Select" ,new {@class="form-control"})
+
+                        <span asp-validation-for="CurrentPostingBranchId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="CurrentPlacePostingBenchId" class="control-label"></label>
+                        @*<input asp-for="CurrentPlacePostingBenchId" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.CurrentPlacePostingBenchId ,((List<SelectListItem>)ViewBag.Benches) , "Select" ,new {@class="form-control"})
+
+                        <span asp-validation-for="CurrentPlacePostingBenchId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Attachments Start-->
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="ProfileURL" class="control-label"></label>
+                        @*<input type="file" accept="*.png;*.jpg" name="_PROFILEURL" id="_PROFILEURL"/>*@
+                        @Html.EditorForImage(t=>t.ProfileURL,Model.ProfileURL)
+                        <span asp-validation-for="ProfileURL" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="CNICFrontURL" class="control-label"></label>
+                        @*<input asp-for="CNICFrontURL" class="form-control" />*@
+                        @*<input type="file" accept="*.png;*.jpg" name="_CNICFRONTURL" id="_CNICFRONTURL"/>*@
+
+                        @Html.EditorForImage(t=>t.CNICFrontURL,Model.CNICFrontURL)
+                        <span asp-validation-for="CNICFrontURL" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="CNICBackURL" class="control-label"></label>
+                        @*<input asp-for="CNICBackURL" class="form-control" />*@
+                        @*    <input type="file" accept="*.png;*.jpg" name="_CNICBACKURL" id="_CNICBACKURL"/>*@
+                        @Html.EditorForImage(t=>t.CNICBackURL,Model.CNICBackURL)
+                        <span asp-validation-for="CNICBackURL" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="CurrentPaySlipURL" class="control-label"></label>
+                        @*<input asp-for="CurrentPaySlipURL" class="form-control" />*@
+                        @*<input type="File" name="CurrentPaySlipURL"  name="_CURRENTPAYSLIPURL" id="_CURRENTPAYSLIPURL"/>*@
+                        @Html.EditorForImage(t=>t.CurrentPaySlipURL,Model.CurrentPaySlipURL)
+                        <span asp-validation-for="CurrentPaySlipURL" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="DomicileURL" class="control-label"></label>
+                        @*<input type="file" accept="*.png;*.jpg" name="_PROFILEURL" id="_PROFILEURL"/>*@
+                        @Html.EditorForImage(t=>t.DomicileURL,Model.DomicileURL)
+                        <span asp-validation-for="DomicileURL" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Attachments End-->
+            <hr />
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="FullName" class="control-label"></label>
+                        <input asp-for="FullName" class="form-control" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+
+                <div class="form-group">
+                    <label asp-for="FatherName" class="control-label"></label>
+                    <input asp-for="FatherName" class="form-control" />
+                    <span asp-validation-for="FatherName" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="DOB" class="control-label"></label>
+                    <input type="hidden" name="DOB_FOR" id="DOB" value="@(Model.DOB.HasValue? Model.DOB.Value.ToString("dd-MMM-yyyy") : "" )" />
+                        <div class="input-group date" id="DOBPicker">
+
+                            <input type="text" class="form-control" onchange="TextChange('date','DOB')" id="date" readonly="true" value="@(Model.DOB.HasValue? Model.DOB.Value.ToString("dd-MMM-yyyy") : "" )" />
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-light d-block">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                    <span asp-validation-for="DOB" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="form-group">
+                        <label asp-for="DomicileId" class="control-label"></label>
+                        @*<input asp-for="DomicileId" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.DomicileId,((List<SelectListItem>)ViewBag.Domiciles) , "Select",new{ @class="form-control",id="Domicile",show="divDomicileOther"})
+                        <span asp-validation-for="DomicileId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group" id="divDomicileOther" @(Model.Domicile!=null && Model.Domicile.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="DomicileOther" class="control-label"></label>
+                        <input asp-for="DomicileOther" class="form-control" />
+                        <span asp-validation-for="DomicileOther" class="text-danger"></span>
+                </div>
+              
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <div class="form-group">
+                        <label asp-for="Gender" class="control-label"></label>
+
+                        @Html.DropDownListFor(t=>t.Gender ,((List<SelectListItem>)ViewBag.Genders) , "Select",new {@class="form-control" , id="Gender", show="divGenderOther"})
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                </div>
+               
+                <div class="form-group" id="divGenderOther" @(Model.Gender!=null && Model.Gender.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="GenderOther" class="control-label"></label>
+                        <input asp-for="GenderOther" class="form-control" />
+                        <span asp-validation-for="GenderOther" class="text-danger"></span>
+                </div>
+               
+
+
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="BloodGroup" class="control-label"></label>
+                    @*<input asp-for="BloodGroup" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.BloodGroup ,((List<SelectListItem>)ViewBag.BloodGroups) , "Select" ,new {@class="form-control"})
+                    <span asp-validation-for="BloodGroup" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="form-group">
+                        <label asp-for="ReligionId" class="control-label"></label>
+                        @*<input asp-for="BloodGroup" class="form-control" />*@
+                        @Html.DropDownListFor(t=>t.ReligionId ,((List<SelectListItem>)ViewBag.Religions) , "Select" ,new {@class="form-control" , id="ReligionId",show="divReligionOther"})
+                        <span asp-validation-for="ReligionId" class="text-danger"></span>
+                    </div>
+                </div>
+                 <div class="form-group" id="divReligionOther" @(Model.Religion!=null && Model.Religion.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="ReligionOther" class="control-label"></label>
+                        <input asp-for="ReligionOther" class="form-control" />
+                        <span asp-validation-for="ReligionOther" class="text-danger"></span>
+                 </div>
+             
+            </div>
+            <div class="col">
+                <div>
+                <div class="form-group">
+                    <label asp-for="NationalityId" class="control-label"></label>
+                    @*<input asp-for="NationalityId" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.NationalityId ,((List<SelectListItem>)ViewBag.Nationalities) , "Select" ,new {@class="form-control",id="NationalityID",show="divNationalityOther"})
+
+                    <span asp-validation-for="NationalityId" class="text-danger"></span>
+                </div>
+                </div>
+                 <div class="form-group" id="divNationalityOther" @(Model.Nationality!=null && Model.Nationality.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="NationalityOther" class="control-label"></label>
+                        <input asp-for="NationalityOther" class="form-control" />
+                        <span asp-validation-for="NationalityOther" class="text-danger"></span>
+                    </div>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>
+                <div class="form-group">
+                    <label asp-for="MaritalStatus" class="control-label"></label>
+                    @*<input asp-for="MaritalStatus" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.MaritalStatus ,((List<SelectListItem>)ViewBag.MaritalStatuses) , "Select" ,new {@class="form-control",id="MartialStatus" , show="divMaritalStatusOther"})
+                    <span asp-validation-for="MaritalStatus" class="text-danger"></span>
+                </div>
+                </div>
+                 <div class="form-group" id="divMaritalStatusOther" @(Model.MaritalStatus!=null && Model.MaritalStatus.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="MaritalStatusOther" class="control-label"></label>
+                        <input asp-for="MaritalStatusOther" class="form-control" />
+                        <span asp-validation-for="MaritalStatusOther" class="text-danger"></span>
+                    </div>
+              
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="PermanentAddress" class="control-label"></label>
+                    <input asp-for="PermanentAddress" class="form-control" />
+                    <span asp-validation-for="PermanentAddress" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="PostalAddress" class="control-label"></label>
+                    <input asp-for="PostalAddress" class="form-control" />
+                    <span asp-validation-for="PostalAddress" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="HighestQualificationLevelAtAppointmentId" class="control-label"></label>
+                    @*<input asp-for="HighestQualificationLevelAtAppointmentId" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.HighestQualificationLevelAtAppointmentId ,((List<SelectListItem>)ViewBag.DegreeLevels) , "Select" ,new {@class="form-control"})
+
+                    <span asp-validation-for="HighestQualificationLevelAtAppointmentId" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="EmergencyContactNo" class="control-label"></label>
+                    <input asp-for="EmergencyContactNo" class="form-control" />
+                    <span asp-validation-for="EmergencyContactNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="EmergencContactName" class="control-label"></label>
+                    <input asp-for="EmergencContactName" class="form-control" />
+                    <span asp-validation-for="EmergencContactName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="EmergencContactRelation" class="control-label"></label>
+                    <input asp-for="EmergencContactRelation" class="form-control" />
+                    <span asp-validation-for="EmergencContactRelation" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" readonly="true" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @*<div class="form-group">
+            <label asp-for="ProfileURL" class="control-label"></label>
+            <input asp-for="ProfileURL" class="form-control" />
+            <span asp-validation-for="ProfileURL" class="text-danger"></span>
+            </div>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="hidden" asp-for="IsVerified" value="false" />
+            </label>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+@*<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>*@
+
+<script type="text/javascript">
+    (function(jQuery) {
+          $(document).ready(function()
+          {
+             //$( "input.date" ).datepicker({
+             //       altFormat: "dd-mmm-yyyy"
+             //});
+            $('.date').datepicker({
+                autoHide: true,
+            format: 'dd-M-yyyy',
+
+             endDate: new Date()
+            }).on('changeDate',function(e){
+                 $(this).datepicker('hide');
+            });
+          });
+    })(jQuery);
+
+</script>
+}

@@ -1,0 +1,325 @@
+﻿@model IEnumerable<HRM.Models.ViewModels.QualificationVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h4>Education Details (at the time of appointment LHC)</h4>
+<hr />
+
+<div class="col-12 rt-overflow">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>
+                    Degree
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QualitifationTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YearOfResult)
+                </th>
+             @*   <th>
+                    @Html.DisplayNameFor(model => model.ResultDate)
+                </th>*@
+                @* <th>
+                    @Html.DisplayNameFor(model => model.MarksObtained)
+                    </th>*@
+                <th>
+                    Result/Marks
+                </th>
+                @*<th>
+                    @Html.DisplayNameFor(model => model.MarksType)
+                    </th>*@
+                @*<th>
+                    @Html.DisplayNameFor(model => model.OtherMarkObtain)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.OtherMarkTotal)
+                    </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.BoardUniversity)
+                </th>
+
+                <th>
+                    University/Board
+                </th>
+                @*     <th>
+                    @Html.DisplayNameFor(model => model.Degree_Back_URL)
+                    </th>*@
+              
+                @*        <th>
+                    @Html.DisplayNameFor(model => model.DegreeId)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.DegreeLevelId)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.IsVerified)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.VerifiedBy)
+                    </th>*@
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Where(t => t.QualificationTime == "Before Joining").OrderBy(t => t.DegreeLevelId).ThenBy(t => t.YearOfResult).ToList())
+            {
+                <tr>
+                    <td>
+                        @item.DegreeLevel 
+                        <br/>
+                        <p>@(@item.DegreeName.Trim() !="Illiterate" ? item.DegreeName : "")</p>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QualitifationTitle)
+                    </td>
+                    <td>
+                        @if (item.DegreeLevelId == 1 || item.DegreeLevelId == 2)
+                        {
+                            @Html.Raw("N/A")
+
+                        }else
+                        {
+                        @Html.DisplayFor(modelItem => item.YearOfResult)    
+                        }
+                        
+                    </td>
+                   @* <td>
+                        @Html.DisplayFor(modelItem => item.ResultDate)
+                    </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MarksType) <br />
+                        @if (item.DegreeLevelId == 1 || item.DegreeLevelId == 2)
+                        {
+                            
+
+                        }
+                        else
+                        if( item.MarksType == "Grade" || item.MarksType == "Division")
+                        {
+                            @item.GradeOrDivisionOrPass
+                        }else 
+                        if(item.MarksType=="Marks" || item.MarksType=="CGPA")
+                        {
+                                @Html.DisplayFor(modelItem => item.MarksObtained)
+                                @Html.Raw("/")
+                                @Html.DisplayFor(modelItem => item.TotalMarks)    
+                        }
+                        
+                    </td>
+
+                    @*    <td>
+                        @Html.DisplayFor(modelItem => item.OtherMarkObtain)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.OtherMarkTotal)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BoardUniversity)
+                    </td>
+
+                    <td>
+                        @Html.DisplayForImage(modelItem => item.Degree_Front_URL,item.Degree_Front_URL)
+                    </td>
+                    @*   <td>
+                        @Html.DisplayFor(modelItem => item.Degree_Back_URL)
+                        </td>*@
+                   
+                    @*     <td>
+                        @Html.DisplayFor(modelItem => item.DegreeId)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.DegreeLevelId)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.IsVerified)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.VerifiedBy)
+                        </td>*@
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+<h4>Education Details (obtain after joining LHC)</h4>
+<hr />
+
+<div class="col-12 rt-overflow">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>
+                    Degree
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QualitifationTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YearOfResult)
+                </th>
+             @*   <th>
+                    @Html.DisplayNameFor(model => model.ResultDate)
+                </th>*@
+                @* <th>
+                    @Html.DisplayNameFor(model => model.MarksObtained)
+                    </th>*@
+                <th>
+                    Result/Marks
+                </th>
+                @*<th>
+                    @Html.DisplayNameFor(model => model.MarksType)
+                    </th>*@
+                @*<th>
+                    @Html.DisplayNameFor(model => model.OtherMarkObtain)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.OtherMarkTotal)
+                    </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.BoardUniversity)
+                </th>
+
+                <th>
+                    University/Board
+                </th>
+                <th>
+                    @Html.DisplayNameFor(t=>t.NOC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(t=>t.IsPlacedOnRecord)
+                </th>
+                @*     <th>
+                    @Html.DisplayNameFor(model => model.Degree_Back_URL)
+                    </th>*@
+              
+                @*        <th>
+                    @Html.DisplayNameFor(model => model.DegreeId)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.DegreeLevelId)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.IsVerified)
+                    </th>
+                    <th>
+                    @Html.DisplayNameFor(model => model.VerifiedBy)
+                    </th>*@
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Where(t => t.QualificationTime == "After Joining").OrderBy(t => t.DegreeLevelId).ThenBy(t => t.YearOfResult).ToList())
+            {
+                <tr>
+                   <td>
+                        @item.DegreeLevel 
+                        <br/>
+                        <p>@(@item.DegreeName.Trim() !="Illiterate" ? item.DegreeName : "")</p>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QualitifationTitle)
+                    </td>
+                    <td>
+                        @if (item.DegreeLevelId == 1 || item.DegreeLevelId == 2)
+                        {
+                            @Html.Raw("N/A")
+
+                        }else
+                        {
+                        @Html.DisplayFor(modelItem => item.YearOfResult)    
+                        }
+                        
+                    </td>
+                   @* <td>
+                        @Html.DisplayFor(modelItem => item.ResultDate)
+                    </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MarksType) <br />
+                        @if (item.DegreeLevelId == 1 || item.DegreeLevelId == 2)
+                        {
+                            
+
+                        }
+                        else
+                        if( item.MarksType == "Grade" || item.MarksType == "Division")
+                        {
+                            @item.GradeOrDivisionOrPass
+                        }else 
+                        if(item.MarksType=="Marks" || item.MarksType=="CGPA")
+                        {
+                                @Html.DisplayFor(modelItem => item.MarksObtained)
+                                @Html.Raw("/")
+                                @Html.DisplayFor(modelItem => item.TotalMarks)    
+                        }
+                        
+                    </td>
+
+                    @*    <td>
+                        @Html.DisplayFor(modelItem => item.OtherMarkObtain)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.OtherMarkTotal)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BoardUniversity)
+                    </td>
+
+                    <td>
+                        @Html.DisplayForImage(modelItem => item.Degree_Front_URL,item.Degree_Front_URL)
+                    </td>
+                    <td>
+                            @(item.NOC?"Yes":"No")
+                                <br/>
+                                @if (item.NOC)
+                                {
+
+                            Html.DisplayImage(item.NOCURL);
+
+                                }
+
+
+                    </td>
+                    <td>
+                        @(item.IsPlacedOnRecord?"Yes":"No")
+                               
+                    </td>
+                    @*   <td>
+                        @Html.DisplayFor(modelItem => item.Degree_Back_URL)
+                        </td>*@
+                   
+                    @*     <td>
+                        @Html.DisplayFor(modelItem => item.DegreeId)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.DegreeLevelId)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.IsVerified)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.VerifiedBy)
+                        </td>*@
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,251 @@
+﻿@model HRM.Models.ViewModels.AppointmentVM
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h4>Editing - Appointment Details( Lahore High Court )</h4>
+<p class="text-danger">
+    <span class="text-bold text-xl-start">Note</span>
+    If the employee has been appointed in Lahore High Court more than once, the details of all such appointments are mandatory.
+
+</p>
+<hr />
+<div class="row">
+    <div class="">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmployeeId"/>
+            <input type="hidden" asp-for="Id"/>
+            
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="AppointmentAsId" class="control-label"></label>
+
+                    @*<input asp-for="AppointmentAsId" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.AppointmentAsId,((List<SelectListItem>)ViewBag.Designations) , "Select" ,new {@class="form-control"})
+                    <span asp-validation-for="AppointmentAsId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="AppointmentBPSId" class="control-label"></label>
+                    @*<input asp-for="AppointmentBPSId" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.AppointmentBPSId,((List<SelectListItem>)ViewBag.BPS) , "Select" ,new {@class="form-control"})
+
+                    <span asp-validation-for="AppointmentBPSId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="DateOfAppointmentLetter" class="control-label"></label>
+                    @*<input asp-for="DateOfAppointmentLetter" class="form-control" />*@
+                    @*<input name="DateOfAppointmentLetter" type="date" class="form-control" value="@(Model!=null&& Model.DateOfAppointmentLetter!=null ? Model.DateOfAppointmentLetter.Value.ToString("yyyy-MM-dd"):"")" />*@
+                    <input type="hidden" name="DateOfAppointmentLetter_FOR" id="DateOfAppointmentLetter" value="@(Model.DateOfAppointmentLetter.HasValue? Model.DateOfAppointmentLetter.Value.ToString("MM/dd/yyyy") : "" )"/>
+                    <div class="input-group date" id="DOBPicker">
+                        
+                        <input type="text" class="form-control" onchange="TextChange('appdate','DateOfAppointmentLetter')" id="appdate" readonly="true" value="@(Model.DateOfAppointmentLetter.HasValue? Model.DateOfAppointmentLetter.Value.ToString("dd-MMM-yyyy") : "" )"/>
+                        <span class="input-group-append">
+                            <span class="input-group-text bg-light d-block">
+                            <i class="fa fa-calendar"></i>
+                            </span>
+                        </span>
+                    </div>
+                    <span asp-validation-for="DateOfAppointmentLetter" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="AppiontmentLetterURL" class="control-label"></label>
+                    @*<input asp-for="AppiontmentLetterURL" class="form-control" />*@
+                    @Html.EditorForImage(t=>t.AppiontmentLetterURL,Model.AppiontmentLetterURL)
+                    <span asp-validation-for="AppiontmentLetterURL" class="text-danger"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="DateOfChargeAssumption" class="control-label"></label>
+                    @*<input asp-for="DateOfChargeAssumption" class="form-control" />*@
+                    @*<input name="DateOfChargeAssumption" type="date" class="form-control" value="@(Model!=null&& Model.DateOfChargeAssumption!=null ? Model.DateOfChargeAssumption.Value.ToString("yyyy-MM-dd"):"")" />*@
+                         <input type="hidden" name="DateOfChargeAssumption_FOR" id="DateOfChargeAssumption" value="@(Model.DateOfChargeAssumption.HasValue? Model.DateOfChargeAssumption.Value.ToString("MM/dd/yyyy") : "" )"/>
+                    <div class="input-group date" id="DOBPicker">
+                        
+                        <input type="text" class="form-control" onchange="TextChange('date','DateOfChargeAssumption')" id="date" readonly="true" value="@(Model.DateOfChargeAssumption.HasValue? Model.DateOfChargeAssumption.Value.ToString("dd-MMM-yyyy") : "" )"/>
+                        <span class="input-group-append">
+                            <span class="input-group-text bg-light d-block">
+                            <i class="fa fa-calendar"></i>
+                            </span>
+                        </span>
+                    </div>
+                    <span asp-validation-for="DateOfChargeAssumption" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                <div class="form-group">
+                    <label asp-for="QuotaId" class="control-label"></label>
+                    @*<input asp-for="QuotaId" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.QuotaId,((List<SelectListItem>)ViewBag.Quotas) , "Select" ,new {@class="form-control"})
+                    <span asp-validation-for="QuotaId" class="text-danger"></span>
+                </div>
+                 </div>
+                 <div class="form-group" id="divQuotaOther" @(Model.Quota!=null && Model.Quota.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="QuotaOther" class="control-label"></label>
+                        <input asp-for="QuotaOther" class="form-control" />
+                        <span asp-validation-for="QuotaOther" class="text-danger"></span>
+                    </div>
+            </div>
+            <div class="col">
+                <div>
+                <div class="form-group">
+                    <label asp-for="ModeOfAppointmentId" class="control-label"></label>
+                    @*<input asp-for="ModeOfAppointmentId" class="form-control" />*@
+                    @Html.DropDownListFor(t=>t.ModeOfAppointmentId ,((List<SelectListItem>)ViewBag.ModeOfAppointments) , "Select" ,new {@class="form-control"})
+                    <span asp-validation-for="ModeOfAppointmentId" class="text-danger"></span>
+                </div>
+                  </div>
+                 <div class="form-group" id="divModeOfAppointmentOther" @(Model.ModeOfAppointment!=null && Model.ModeOfAppointment.ToUpper()=="OTHER" ? "" : "style=display:none;")>
+                        <label asp-for="ModeOfAppointmentOther" class="control-label"></label>
+                        <input asp-for="ModeOfAppointmentOther" class="form-control" />
+                        <span asp-validation-for="ModeOfAppointmentOther" class="text-danger"></span>
+                    </div>
+                
+            </div>
+            <div class="col">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="JoinThroughProperChannel" id="JoinThroughProperChannel" /> @Html.DisplayNameFor(model => model.JoinThroughProperChannel)
+                    </label>
+                </div>
+
+            </div>
+            <div class="col" id="divServiceHistoryId">
+                <div class="form-group">
+                    <label for="ServiceHistoryId" class="control-label">Selected Service</label>
+                    @*<input asp-for="DateOfAppointmentLetter" class="form-control" />*@
+                    <input type="hidden" asp-for="ServiceHistoryId" id="ServiceHistoryId"  />
+                    <input asp-for="ServiceHistoryText" readonly="true" class="form-control" value="" id="ServiceHistoryText" />
+                    <span asp-validation-for="ServiceHistoryId" class="text-danger"></span>
+                </div>
+            </div>
+            
+            <div class="col">
+              
+            </div>
+        </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+
+
+<script type="text/javascript">
+    (function(jQuery) {
+          $(document).ready(function()
+          {
+
+            $('#JoinThroughProperChannel').click(function ()
+            {
+
+                if ($('#JoinThroughProperChannel').is(':checked') == true) {
+
+                     $("#JoinThroughProperChannel").prop("checked", false);
+                     $.ajax({
+                    url: "/Employee/ServiceHistory/CreateAjax/",
+                    dataType: "html",
+
+                    success: function (data) {
+                             $('#modalContent').html(data);
+                             $('#createService').modal('show');
+                    },
+                    error: function (xhr, exception) {
+                        var msg = "";
+                        if (xhr.status === 0) {
+                            msg = "Not connect.\n Verify Network." + xhr.responseText;
+                        } else if (xhr.status == 404) {
+                            msg = "Requested page not found. [404]" + xhr.responseText;
+                        } else if (xhr.status == 500) {
+                            msg = "Internal Server Error [500]." +  xhr.responseText;
+                        } else if (exception === "parsererror") {
+                            msg = "Requested JSON parse failed.";
+                        } else if (exception === "timeout") {
+                            msg = "Time out error." + xhr.responseText;
+                        } else if (exception === "abort") {
+                            msg = "Ajax request aborted.";
+                        } else {
+                            msg = "Error:" + xhr.status + " " + xhr.responseText;
+                        }
+                        console.log(msg);
+                    }
+                });
+
+
+
+                }else
+                {
+                    $("#JoinThroughProperChannel").prop("checked", false);
+                     $('#ServiceHistoryId').val("");
+                     $('#ServiceHistoryText').val("");
+                     $('#divServiceHistoryId').hide();
+                }
+            });
+
+            $('body').on('click', 'a.choosed', function() {
+                
+                $('#ServiceHistoryId').val($(this).attr("data-id"));
+                $('#ServiceHistoryText').val($(this).attr("data-name"));
+                  $("#JoinThroughProperChannel").prop("checked", true);
+                  $('#createService').modal('hide');
+                       $('#divServiceHistoryId').show();
+                        ////Set the URL.
+                        //var url = $("#serviceForm").attr("action");
+
+                        ////Add the Field values to FormData object.
+                        ////var formData = new FormData();
+                        ////formData.append("firstName", $("#txtFirstName").val());
+                        ////formData.append("lastName", $("#txtLastName").val());
+                        //var formData = $("#serviceForm").serialize();
+                        //console.log(data);
+                        //$.ajax({
+                        //    type: 'POST',
+                        //    url: url,
+                        //    data: formData,
+                        //    processData: false,
+                        //    contentType: false
+                        //}).done(function (response) {
+                        //    console.log(response);
+                        //    if (response.Status === "success") {
+
+                        //    }
+                        //});
+
+            });
+          });
+    })(jQuery);
+
+</script>
+}
+

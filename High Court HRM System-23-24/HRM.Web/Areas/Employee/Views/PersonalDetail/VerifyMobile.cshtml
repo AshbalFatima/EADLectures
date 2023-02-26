@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewData["Title"] = "VerifyMobile";
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+}
+
+
+<h4>Verify Mobile</h4>
+@*<p class="text-danger">
+    <span class="text-bold text-xl-start">Note</span>
+    If the employee has been appointed in Lahore High Court more than once, the details of all such appointments are mandatory.
+
+</p>*@
+<hr />
+
+<!--Grid row-->
+<div class="row d-flex justify-content-center">
+  <!--Grid column-->
+  <div class="col-md-6">
+    
+    <form asp-action="Resend">
+        @if(ViewBag.Message!=null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.Message
+            </div>
+            <input type="submit" id="btn" value="Resend Code" class="btn btn-success" />
+        }
+    </form>  
+    <form asp-action="VerifyMobile">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        
+        @*<div class="form-group">
+            <label asp-for="AppointmentAs" class="control-label"></label>
+            <input asp-for="AppointmentAs" class="form-control" />
+            <span asp-validation-for="AppointmentAs" class="text-danger"></span>
+            </div>*@
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                   @* <label for="verify" class="control-label">Enter Code</label>*@
+
+                    @*<input asp-for="AppointmentAsId" class="form-control" />*@
+                    <input type="text" name="verify" id="verify" class="form-control" placeholder="Enter Verification Code" required/>
+                    @*<span asp-validation-for="verify" class="text-danger"></span>*@
+                </div>
+            </div>
+            <div class="col">
+                 <div class="form-group">
+                    <label for="verify" class="control-label">&nbsp;</label>
+                    <input type="submit" id="btn" value="Verify" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+         
+
+        @*<div class="form-group">
+            <label asp-for="AppointmentBPS" class="control-label"></label>
+            <input asp-for="AppointmentBPS" class="form-control" />
+            <span asp-validation-for="AppointmentBPS" class="text-danger"></span>
+            </div>*@
+
+
+
+
+
+
+
+
+
+    </form>
+    </div>
+</div>

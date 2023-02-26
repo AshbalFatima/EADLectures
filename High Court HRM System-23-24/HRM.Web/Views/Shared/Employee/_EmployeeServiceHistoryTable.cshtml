@@ -1,0 +1,67 @@
+﻿@using HRM.Utilities
+@model IEnumerable<HRM.Models.ViewModels.ServiceHistoryVM>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<h4>Previous Government Service History Other Than Lahore High Court</h4>
+<hr/>
+<div class="col-12 rt-overflow">
+<table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Designation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PayScale)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Deparment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.From)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.To)
+            </th>
+            <th>
+                Relieving Certificate
+            </th>
+            
+            <th>@Html.DisplayNameFor(model => model.JoinThroughProperChannel)</th>
+ 
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Designation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayScale)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Deparment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.From)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.To)
+            </td>
+             <td>
+                @Html.DisplayForImage(modelItem => item.RelievingURL,item.RelievingURL)
+            </td>
+            <td>
+                @(item.JoinThroughProperChannel? "Yes":"No")
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>
+</div>

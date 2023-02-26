@@ -1,0 +1,120 @@
+﻿@using HRM.Models
+@using HRM.Utilities
+@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<ApplicationUser> signInManager;
+@inject UserManager<ApplicationUser> UserManager
+@{
+ ApplicationUser UserOTP =null;
+    if(User!=null)
+    UserOTP = UserManager.GetUserAsync(User).GetAwaiter().GetResult(); 
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HRM.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HRM.Web.styles.css" asp-append-version="true" />
+</head>
+<body style="background-image:url('/images/bgimg_.jpg');background-size:cover;">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HR System Lahore High Court</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @*<li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>*@
+                        @if (User!=null && signInManager.IsSignedIn(User) && UserOTP!=null && UserOTP.OTP_Verify)
+                        {
+                            <li class="nav-item dropdown">
+                                @*<a class="nav-link text-dark" >*@
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Personal Detail
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="PersonalDetail" asp-action="Index">View</a>
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="PersonalDetail" asp-action="Edit">Update</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Education
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="Education" asp-action="Index">View All</a>
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="Education" asp-route-type="Before Joining" asp-action="Edit">Add New </a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Appointment
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="Appointment" asp-action="Index">View All</a>
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="Appointment" asp-action="Create">Add New</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Service History
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="ServiceHistory" asp-action="Index">View All</a>
+                                    <a class="dropdown-item" asp-area="Employee" asp-controller="ServiceHistory" asp-action="Create">Add New</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="javascript:void(0)" id="preview">Preview</a>
+                            </li>
+                        }
+                    </ul>
+                    <partial name="_LoginPartial"/>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted " style="background-color: var(--bs-body-bg);">
+        <div class="container">
+            &copy; 2022 - Web Section Lahore High Court, Lahore@*- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+       $(document).ready(function() {
+                    $('.dropdown-toggle').click(function(){
+                        $('.dropdown-menu.show').toggleClass('show');
+                    $(this).next().toggleClass('show');
+               
+
+
+
+            });
+</script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await Component.InvokeAsync("Notyf")
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

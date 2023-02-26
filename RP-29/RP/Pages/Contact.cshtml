@@ -1,0 +1,22 @@
+﻿@page
+@model RP.Pages.ContactModel
+@{
+}
+
+Contact Page
+
+<form method="post">
+
+    Email : <input type="text" asp-for="Email" placeholder="i.e. emailatDomain.com" />
+    Phone: <input type="text" asp-for="PhoneNumber" placeholder="i.e.003030303003" />
+    Message : <input type="text" asp-for="Message" placeholder="i.e. Message Detail" />
+    
+    
+    
+    <input type="submit" Value="Submit"/>
+</form>
+
+
+
+
+@Model.Summary

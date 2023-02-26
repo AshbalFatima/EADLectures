@@ -1,0 +1,8 @@
+E:\Video Lecture\TMS\AsyncConsole\bin\Debug\AsyncConsole.exe.config
+E:\Video Lecture\TMS\AsyncConsole\bin\Debug\AsyncConsole.exe
+E:\Video Lecture\TMS\AsyncConsole\bin\Debug\AsyncConsole.pdb
+E:\Video Lecture\TMS\AsyncConsole\obj\Debug\AsyncConsole.csproj.AssemblyReference.cache
+E:\Video Lecture\TMS\AsyncConsole\obj\Debug\AsyncConsole.csproj.SuggestedBindingRedirects.cache
+E:\Video Lecture\TMS\AsyncConsole\obj\Debug\AsyncConsole.csproj.CoreCompileInputs.cache
+E:\Video Lecture\TMS\AsyncConsole\obj\Debug\AsyncConsole.exe
+E:\Video Lecture\TMS\AsyncConsole\obj\Debug\AsyncConsole.pdb

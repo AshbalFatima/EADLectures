@@ -1,0 +1,87 @@
+﻿@model HRM.Models.Appointment
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>Appointment Details( Lahore High Court ) - Edit</h4>
+<p class="text-danger">
+    <span class="text-bold text-xl-start">Note</span>
+    If the epmployee has been appointed in Lahore High Court more than once, the details of all such appointments are mandatory.
+
+</p>
+<hr />
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="AppointmentAs" class="control-label"></label>
+                <input asp-for="AppointmentAs" class="form-control" />
+                <span asp-validation-for="AppointmentAs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentAsId" class="control-label"></label>
+                <input asp-for="AppointmentAsId" class="form-control" />
+                <span asp-validation-for="AppointmentAsId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentBPS" class="control-label"></label>
+                <input asp-for="AppointmentBPS" class="form-control" />
+                <span asp-validation-for="AppointmentBPS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppointmentBPSId" class="control-label"></label>
+                <input asp-for="AppointmentBPSId" class="form-control" />
+                <span asp-validation-for="AppointmentBPSId" class="text-danger"></span>
+            </div>
+         
+            <div class="form-group">
+                <label asp-for="DateOfAppointmentLetter" class="control-label"></label>
+                <input asp-for="DateOfAppointmentLetter" class="form-control" />
+                <span asp-validation-for="DateOfAppointmentLetter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quota" class="control-label"></label>
+                <input asp-for="Quota" class="form-control" />
+                <span asp-validation-for="Quota" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuotaId" class="control-label"></label>
+                <input asp-for="QuotaId" class="form-control" />
+                <span asp-validation-for="QuotaId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="EmployeeId" class="control-label"></label>
+                <select asp-for="EmployeeId" class="form-control" asp-items="ViewBag.EmployeeId"></select>
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsVerified" /> @Html.DisplayNameFor(model => model.IsVerified)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerifiedBy" class="control-label"></label>
+                <input asp-for="VerifiedBy" class="form-control" />
+                <span asp-validation-for="VerifiedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+`

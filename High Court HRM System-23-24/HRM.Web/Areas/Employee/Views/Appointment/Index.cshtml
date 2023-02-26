@@ -1,0 +1,99 @@
+﻿
+@model IEnumerable<AppointmentVM>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h6>Appointment Details (Lahore High Court)</h6>
+<hr/>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentAs)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentBPS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfAppointmentLetter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfChargeAssumption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppiontmentLetterURL)
+            </th>
+            
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Quota)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.ModeOfAppointment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.JoinThroughProperChannel)
+            </th>
+            
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppointmentAs)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.AppointmentBPS)
+            </td>
+            
+            
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfAppointmentLetter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfChargeAssumption)
+            </td>
+            <td>
+                @Html.DisplayForImage(modelItem => item.AppiontmentLetterURL,item.AppiontmentLetterURL)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Quota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModeOfAppointment)
+            </td>
+             <td>
+                @(item.JoinThroughProperChannel?"Yes":"No")
+                <br/>
+                Last Service: 
+                <br/>
+                    @if (item.JoinThroughProperChannel)
+                    {
+                        <a href="/Employee/ServiceHistor/Details/@item.ServiceHistoryId" class="">@item.ServiceHistoryText</a>
+                    }
+                </td>
+        
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+@{
+    ViewData["Title"] = "ROLES";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Styles {
+    <link href="~/lib/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
+}
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Users</th>
+            <th class="col-md-2 text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.Id</td>
+                <td>@role.Name</td>
+                <td i-role="@role.Id"></td>
+                <td class="text-center">
+                    <form asp-action="Delete" asp-route-id="@role.Id" method="post">
+                        <a asp-action="Edit" asp-route-id="@role.Id" class="btn btn-sm btn-warning">Edit</a> |
+                        <button type="submit" class="btn btn-sm btn-danger">
+                            Delete
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script src="~/lib/datatable/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatable/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var table = $('.table').DataTable({
+                columns: [
+                    null,
+                    null,
+                    null,
+                    { orderable: false }
+                ]
+            });
+            $(table.table().container()).removeClass('form-inline');
+        });
+    </script>
+}

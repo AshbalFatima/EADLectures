@@ -1,0 +1,941 @@
+﻿++Solution 'HRM' ‎(5 of 5 projects)
+i:{00000000-0000-0000-0000-000000000000}:HRM.sln
+++HRM.Models
+i:{00000000-0000-0000-0000-000000000000}:HRM.Models
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.models\hrm.models.csproj
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:f:\projects\high court hrm system\hrm.models\hrm.models.csproj
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.models\hrm.models.csproj
+++Dependencies
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:>2280
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:>2281
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:>2218
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:>2261
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3942
+++ViewModels
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\
+++ApplicationUser.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\applicationuser.cs
+++Appointment.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\appointment.cs
+++Branch.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\branch.cs
+++CustomNotification.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\customnotification.cs
+++DegreeLevel.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\degreelevel.cs
+++DegreeTitle.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\degreetitle.cs
+++Designation.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\designation.cs
+++Domicile.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\domicile.cs
+++Employee.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\employee.cs
+++LHCData.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\lhcdata.cs
+++LOVs.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\lovs.cs
+++Nationality.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\nationality.cs
+++PagedResult.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\pagedresult.cs
+++Qualification.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\qualification.cs
+++ServiceHistory.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\servicehistory.cs
+++Analyzers
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:analyzers
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:analyzers
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:analyzers
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:analyzers
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:analyzers
+++Frameworks
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:frameworks
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:frameworks
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:frameworks
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:frameworks
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:frameworks
+++Packages
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:packages
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:packages
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:packages
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:packages
+++AppointmentVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\appointmentvm.cs
+++BranchVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\branchvm.cs
+++DesignationVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\designationvm.cs
+++EmployeeDataVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\employeedatavm.cs
+++EmployeeVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\employeevm.cs
+++LHCDataSearch.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\lhcdatasearch.cs
+++LHCDataVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\lhcdatavm.cs
+++LOVVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\lovvm.cs
+++QualificationVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\qualificationvm.cs
+++RoleEdit.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\roleedit.cs
+++RoleModification.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\rolemodification.cs
+++ServiceHistoryVM.cs
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\viewmodels\servicehistoryvm.cs
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:c:\users\muhammad\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.8\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:c:\users\muhammad\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.8\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:c:\users\muhammad\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.8\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:c:\users\muhammad\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.8\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\users\muhammad\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:c:\users\muhammad\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:c:\users\muhammad\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:c:\users\muhammad\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:f:\projects\high court hrm system\hrm.models\microsoft.netcore.app
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\microsoft.netcore.app
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:f:\projects\high court hrm system\hrm.services\microsoft.netcore.app
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\microsoft.netcore.app
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\microsoft.netcore.app
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.8)
+i:{9ba6e04c-f23d-4066-bf2a-db7568b89763}:>3970
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:>3952
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:>3983
+++HRM.Repositories
+i:{00000000-0000-0000-0000-000000000000}:HRM.Repositories
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:f:\projects\high court hrm system\hrm.repositories\hrm.repositories.csproj
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.repositories\hrm.repositories.csproj
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.repositories\hrm.repositories.csproj
+++Implementations
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\implementations\
+++Interfaces
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\
+++Migrations
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\migrations\
+++ApplicationDbContext.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\applicationdbcontext.cs
+++Projects
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:projects
+i:{697bb248-9b98-4d14-9a5f-3a5f8e6d21ae}:projects
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:projects
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:projects
+++ApplicationDbContextService.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\implementations\applicationdbcontextservice.cs
+++GenericeRepository.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\implementations\genericerepository.cs
+++UnitOfWork.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\implementations\unitofwork.cs
+++IApplicationDbContext.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\iapplicationdbcontext.cs
+++IAppointmentService.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\iappointmentservice.cs
+++IBranchService.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\ibranchservice.cs
+++IEmployeeService.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\iemployeeservice.cs
+++IGenericRepository.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\igenericrepository.cs
+++ILHCData.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\ilhcdata.cs
+++ILOVsService.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\ilovsservice.cs
+++IQualificationSerivce.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\iqualificationserivce.cs
+++IServiceHistory.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\iservicehistory.cs
+++IUnitOfWork.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\iunitofwork.cs
+++IUserService.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\interfaces\iuserservice.cs
+++20221221092340_Intial.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\migrations\20221221092340_intial.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\migrations\applicationdbcontextmodelsnapshot.cs
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.8)
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:>3951
+++Microsoft.EntityFrameworkCore.Tools (6.0.8)
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:>3953
+++20221221092340_Intial.Designer.cs
+i:{96477173-d9fd-4b3d-88ce-6dd347ebe21b}:f:\projects\high court hrm system\hrm.repositories\migrations\20221221092340_intial.designer.cs
+++HRM.Services
+i:{00000000-0000-0000-0000-000000000000}:HRM.Services
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.services\hrm.services.csproj
+++HRM.Utilities
+i:{00000000-0000-0000-0000-000000000000}:HRM.Utilities
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.utilities\hrm.utilities.csproj
+++AgeHelper.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\agehelper.cs
+++BSToast.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\bstoast.cs
+++DDHelper.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\ddhelper.cs
+++EmailSender.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\emailsender.cs
+++IDbIntializer.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\idbintializer.cs
+++ImageOperations.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\imageoperations.cs
+++RT_Extension.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\rt_extension.cs
+++WebsiteRoles.cs
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:f:\projects\high court hrm system\hrm.utilities\websiteroles.cs
+++Microsoft.AspNetCore.App.Analyzers
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Identity.UI (6.0.10)
+i:{a36ffc19-9b38-46e0-aeb8-588e780a2bf9}:>3984
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3998
+++HRM.Web
+i:{00000000-0000-0000-0000-000000000000}:HRM.Web
+++Connected Services 
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3943
+++Properties
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\properties\
+++wwwroot
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\
+++Areas
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\
+++Admin
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\
+++Controllers
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\controllers\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\controllers\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\controllers\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\hr\controllers\
+++BranchController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\controllers\branchcontroller.cs
+++DesignationController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\controllers\designationcontroller.cs
+++HomeController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\controllers\homecontroller.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\controllers\homecontroller.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\controllers\homecontroller.cs
+++LHCEmployeeController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\controllers\lhcemployeecontroller.cs
+++LOVController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\controllers\lovcontroller.cs
+++RoleController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\controllers\rolecontroller.cs
+++Views
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\hr\views\
+++Branch
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\branch\
+++Designation
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\designation\
+++Create.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\designation\create.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\lhcemployee\create.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\branch\create.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\role\create.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\appointment\create.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\education\create.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\servicehistory\create.cshtml
+++Edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\designation\edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\lhcemployee\edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\branch\edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\role\edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\appointment\edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\education\edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\personaldetail\edit.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\servicehistory\edit.cshtml
+++Index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\designation\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\lhcemployee\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\branch\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\home\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\lov\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\role\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\appointment\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\education\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\home\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\personaldetail\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\servicehistory\index.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\home\index.cshtml
+++Home
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\home\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\home\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\home\
+++LHCEmployee
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\lhcemployee\
+++LOV
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\lov\
+++Role
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\views\role\
+++_ViewImports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\_viewimports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\_viewimports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\_viewimports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\_viewimports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\_viewimports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\pages\_viewimports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\_viewimports.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\hr\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\admin\_viewstart.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\_viewstart.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\_viewstart.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\pages\_viewstart.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\_viewstart.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\hr\_viewstart.cshtml
+++Employee
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\employee\
+++AppointmentController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\controllers\appointmentcontroller.cs
+++EducationController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\controllers\educationcontroller.cs
+++PersonalDetailController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\controllers\personaldetailcontroller.cs
+++ServiceHistoryController.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\controllers\servicehistorycontroller.cs
+++Appointment
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\appointment\
+++Education
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\education\
+++PersonalDetail
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\personaldetail\
+++ServiceHistory
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\servicehistory\
+++HR
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\hr\
+++Identity
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\
+++Pages
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\pages\
+++Account
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\
+++Manage
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\
+++_Layout.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\_layout.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\pages\_layout.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_layout.cshtml
+++_ManageNav.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\_managenav.cshtml
+++_StatusMessage.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\_statusmessage.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\_statusmessage.cshtml
+++ChangePassword.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\changepassword.cshtml
+++ChangePassword.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\changepassword.cshtml.cs
+++DeletePersonalData.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\deletepersonaldata.cshtml
+++DeletePersonalData.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\deletepersonaldata.cshtml.cs
+++Disable2fa.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\disable2fa.cshtml
+++Disable2fa.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\disable2fa.cshtml.cs
+++DownloadPersonalData.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\downloadpersonaldata.cshtml
+++DownloadPersonalData.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\downloadpersonaldata.cshtml.cs
+++Email.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\email.cshtml
+++Email.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\email.cshtml.cs
+++EnableAuthenticator.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\enableauthenticator.cshtml
+++EnableAuthenticator.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\enableauthenticator.cshtml.cs
+++ExternalLogins.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\externallogins.cshtml
+++ExternalLogins.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\externallogins.cshtml.cs
+++GenerateRecoveryCodes.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\generaterecoverycodes.cshtml
+++GenerateRecoveryCodes.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\generaterecoverycodes.cshtml.cs
+++Index.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\index.cshtml.cs
+++ManageNavPages.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\managenavpages.cs
+++PersonalData.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\personaldata.cshtml
+++PersonalData.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\personaldata.cshtml.cs
+++ResetAuthenticator.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\resetauthenticator.cshtml
+++ResetAuthenticator.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\resetauthenticator.cshtml.cs
+++SetPassword.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\setpassword.cshtml
+++SetPassword.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\setpassword.cshtml.cs
+++ShowRecoveryCodes.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\showrecoverycodes.cshtml
+++ShowRecoveryCodes.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\showrecoverycodes.cshtml.cs
+++TwoFactorAuthentication.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\twofactorauthentication.cshtml
+++TwoFactorAuthentication.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\manage\twofactorauthentication.cshtml.cs
+++AccessDenied.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\accessdenied.cshtml
+++AccessDenied.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\accessdenied.cshtml.cs
+++ConfirmEmail.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\confirmemail.cshtml
+++ConfirmEmail.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\confirmemail.cshtml.cs
+++ConfirmEmailChange.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\confirmemailchange.cshtml
+++ConfirmEmailChange.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\confirmemailchange.cshtml.cs
+++ExternalLogin.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\externallogin.cshtml
+++ExternalLogin.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\externallogin.cshtml.cs
+++ForgotPassword.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\forgotpassword.cshtml
+++ForgotPassword.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\forgotpassword.cshtml.cs
+++ForgotPasswordConfirmation.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\forgotpasswordconfirmation.cshtml
+++ForgotPasswordConfirmation.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\forgotpasswordconfirmation.cshtml.cs
+++Lockout.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\lockout.cshtml
+++Lockout.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\lockout.cshtml.cs
+++Login.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\login.cshtml
+++Login.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\login.cshtml.cs
+++LoginWith2fa.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\loginwith2fa.cshtml
+++LoginWith2fa.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\loginwith2fa.cshtml.cs
+++LoginWithRecoveryCode.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\loginwithrecoverycode.cshtml
+++LoginWithRecoveryCode.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\loginwithrecoverycode.cshtml.cs
+++Logout.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\logout.cshtml
+++Logout.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\logout.cshtml.cs
+++Register.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\register.cshtml
+++Register.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\register.cshtml.cs
+++RegisterConfirmation.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\registerconfirmation.cshtml
+++RegisterConfirmation.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\registerconfirmation.cshtml.cs
+++ResendEmailConfirmation.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\resendemailconfirmation.cshtml
+++ResendEmailConfirmation.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\resendemailconfirmation.cshtml.cs
+++ResetPassword.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\resetpassword.cshtml
+++ResetPassword.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\resetpassword.cshtml.cs
+++ResetPasswordConfirmation.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\resetpasswordconfirmation.cshtml
+++ResetPasswordConfirmation.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\account\resetpasswordconfirmation.cshtml.cs
+++_ValidationScriptsPartial.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\_validationscriptspartial.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\error.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\pages\error.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\error.cshtml
+++Error.cshtml.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\identity\pages\error.cshtml.cs
+++Data
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\data\
+++Models
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\models\
+++Shared
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\
+++_CreateServiceHistory.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_createservicehistory.cshtml
+++_EmployeeDataForm.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_employeedataform.cshtml
+++_EmployeePersonalTable.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_employeepersonaltable.cshtml
+++_Layout.cshtml.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_layout.cshtml.css
+++_LayoutAdmin.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_layoutadmin.cshtml
+++_LayoutEmployee.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_layoutemployee.cshtml
+++_LayoutEmployee.cshtml.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_layoutemployee.cshtml.css
+++_LoginPartial.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\_loginpartial.cshtml
+++ApplicationDbContext.dgml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\applicationdbcontext.dgml
+++appsettings.Development.json
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\appsettings.development.json
+++appsettings.json
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\appsettings.json
+++bundleconfig.json
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\bundleconfig.json
+++libman.json
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\libman.json
+++Program.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\program.cs
+++ScaffoldingReadMe.txt
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\scaffoldingreadme.txt
+++No service dependencies discovered
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3944
+++PublishProfiles
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\properties\publishprofiles\
+++launchSettings.json
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\properties\launchsettings.json
+++AppointmentLetters
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\
+++CNICs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\
+++css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\css\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\css\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\
+++Degrees
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\
+++Deleted
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\deleted\
+++Domiciles
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\domiciles\
+++images
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\images\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\images\
+++js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\js\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\js\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\
+++MISC
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\misc\
+++NOCs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\nocs\
+++PAYSLIPS
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\payslips\
+++Profiles
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\profiles\
+++Relievings
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\relievings\
+++favicon.ico
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\favicon.ico
+++Delete.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\appointment\delete.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\education\delete.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\servicehistory\delete.cshtml
+++Details.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\appointment\details.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\education\details.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\servicehistory\details.cshtml
+++VerifyMobile.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\areas\employee\views\personaldetail\verifymobile.cshtml
+++ErrorViewModel.cs
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\models\errorviewmodel.cs
+++Privacy.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\home\privacy.cshtml
+++_EmployeeAppointmentTable.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\employee\_employeeappointmenttable.cshtml
+++_EmployeeEducationTable.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\employee\_employeeeducationtable.cshtml
+++_EmployeeServiceHistoryTable.cshtml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\views\shared\employee\_employeeservicehistorytable.cshtml
+++MessagePackAnalyzer
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\users\muhammad\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\users\muhammad\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\users\muhammad\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\microsoft.aspnetcore.app
+++AspNetCoreHero.ToastNotification (1.1.0)
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3994
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.10)
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3995
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.10)
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3992
+++Microsoft.EntityFrameworkCore.Tools (6.0.10)
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3996
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.11)
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3997
+++Swashbuckle.AspNetCore (6.3.0)
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:>3993
+++FolderProfile.pubxml
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\properties\publishprofiles\folderprofile.pubxml
+++02d552bc-06a3-4f03-b159-2a1a949c87d4_.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\02d552bc-06a3-4f03-b159-2a1a949c87d4_.png
+++0a520c52-fb60-4003-a5a2-8bf0dfee4dcb_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\0a520c52-fb60-4003-a5a2-8bf0dfee4dcb_.jpg
+++3753f7eb-909a-4d80-aea6-6944988aa488_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\3753f7eb-909a-4d80-aea6-6944988aa488_.jpg
+++46bb2861-2634-48be-8b10-7de7a7ffd3a5_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\46bb2861-2634-48be-8b10-7de7a7ffd3a5_.jpg
+++5febc752-7b01-47ed-8319-ce41056cf4c2_.jpeg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\5febc752-7b01-47ed-8319-ce41056cf4c2_.jpeg
+++6e4a7f16-77e4-4e98-8489-143c0171a7c3_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\6e4a7f16-77e4-4e98-8489-143c0171a7c3_.jpg
+++aae0071a-1561-49a9-a259-d2d09d5ed30d_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\appointmentletters\aae0071a-1561-49a9-a259-d2d09d5ed30d_.jpg
+++1_B.jpeg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\1_b.jpeg
+++1_B.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\1_b.jpg
+++1_F.jpeg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\1_f.jpeg
+++1_F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\1_f.jpg
+++1234567891011_B.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\1234567891011_b.jpg
+++1234567891011_F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\1234567891011_f.jpg
+++abc_B.PNG
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\cnics\abc_b.png
+++RT_Extension.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\css\rt_extension.css
+++site.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\css\site.css
+++1caf2cbe-b65a-4cd6-be97-d14f11cd19b8__F.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\1caf2cbe-b65a-4cd6-be97-d14f11cd19b8__f.png
+++2b250227-408a-4ad5-bcd4-bd7b5ce1034d__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\2b250227-408a-4ad5-bcd4-bd7b5ce1034d__f.jpg
+++407ca50f-5c3c-4443-9219-3099d003464c__F.jpeg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\407ca50f-5c3c-4443-9219-3099d003464c__f.jpeg
+++461f4142-acab-4e1a-93e3-d2aad31fc5e1__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\461f4142-acab-4e1a-93e3-d2aad31fc5e1__f.jpg
+++5faa6fd0-f1b3-4eb0-a4a0-079a05f6469d__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\5faa6fd0-f1b3-4eb0-a4a0-079a05f6469d__f.jpg
+++6efd5782-018f-4678-8e0d-9e6480b103c8__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\6efd5782-018f-4678-8e0d-9e6480b103c8__f.jpg
+++727dd1c9-2ea2-4382-aaef-ae5960f3972d__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\degrees\727dd1c9-2ea2-4382-aaef-ae5960f3972d__f.jpg
+++15ad1176-0ffb-4618-b758-d091efaca113_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\deleted\15ad1176-0ffb-4618-b758-d091efaca113_.jpg
+++28d7bd59-9609-406d-9299-95990f702c11_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\deleted\28d7bd59-9609-406d-9299-95990f702c11_.jpg
+++7b8a4368-94d6-445f-86fb-11e9187901c6_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\deleted\7b8a4368-94d6-445f-86fb-11e9187901c6_.jpg
+++ff948437-0942-4c33-aca4-3f510980e59b_.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\deleted\ff948437-0942-4c33-aca4-3f510980e59b_.png
+++1.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\domiciles\1.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\profiles\1.jpg
+++1234567891011.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\domiciles\1234567891011.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\profiles\1234567891011.jpg
+++abc.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\domiciles\abc.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\profiles\abc.png
+++_noImage.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\images\_noimage.png
+++bgimg_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\images\bgimg_.jpg
+++howto.mp4
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\images\howto.mp4
+++noImage.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\images\noimage.png
+++RT_Extension.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\js\rt_extension.js
+++site.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\js\site.js
+++bootstrap
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\
+++bootstrap-datetimepicker
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\
+++datatables
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\
+++jquery
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery\
+++jquery-validation
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation-unobtrusive\
+++4b219649-0d07-457b-a894-ecca542a01a0__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\nocs\4b219649-0d07-457b-a894-ecca542a01a0__f.jpg
+++a80e44e8-8953-4959-a6b8-aae612b288ca__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\nocs\a80e44e8-8953-4959-a6b8-aae612b288ca__f.jpg
+++f672d584-d3da-4754-9a99-dc100356b0ff__F.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\nocs\f672d584-d3da-4754-9a99-dc100356b0ff__f.jpg
+++1_PaySlip.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\payslips\1_payslip.jpg
+++1234567891011_PaySlip.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\payslips\1234567891011_payslip.jpg
+++0593322b-9988-4b1f-a791-8059c189e130_.jpeg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\relievings\0593322b-9988-4b1f-a791-8059c189e130_.jpeg
+++43c815d3-fb2d-4a0e-8aa0-5ed872c5f9ba_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\relievings\43c815d3-fb2d-4a0e-8aa0-5ed872c5f9ba_.jpg
+++822f30d6-0c66-4a93-b9fb-148e718533cd_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\relievings\822f30d6-0c66-4a93-b9fb-148e718533cd_.jpg
+++bb8a4fea-899c-496c-b9fc-a19d691aa066_.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\relievings\bb8a4fea-899c-496c-b9fc-a19d691aa066_.png
+++d106398e-7ba4-487d-87cb-455b55d8c5b5_.jpg
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\relievings\d106398e-7ba4-487d-87cb-455b55d8c5b5_.jpg
+++ee71b21a-be11-40b6-86e9-be78ede901ca_.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\relievings\ee71b21a-be11-40b6-86e9-be78ede901ca_.png
+++dist
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery\dist\
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery\license.txt
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.validate.unobtrusive.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++tempus-dominus.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\css\tempus-dominus.css
+++tempus-dominus.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\css\tempus-dominus.min.css
+++jQuery-provider.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\js\jquery-provider.js
+++jQuery-provider.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\js\jquery-provider.min.js
+++tempus-dominus.esm.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\js\tempus-dominus.esm.js
+++tempus-dominus.esm.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\js\tempus-dominus.esm.min.js
+++tempus-dominus.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\js\tempus-dominus.js
+++tempus-dominus.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap-datetimepicker\js\tempus-dominus.min.js
+++dataTables.bootstrap.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.bootstrap.css
+++dataTables.bootstrap.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.bootstrap.min.css
+++dataTables.bootstrap4.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.bootstrap4.css
+++dataTables.bootstrap4.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.bootstrap4.min.css
+++dataTables.foundation.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.foundation.css
+++dataTables.foundation.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.foundation.min.css
+++dataTables.jqueryui.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.jqueryui.css
+++dataTables.jqueryui.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.jqueryui.min.css
+++dataTables.material.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.material.css
+++dataTables.material.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.material.min.css
+++dataTables.semanticui.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.semanticui.css
+++dataTables.semanticui.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.semanticui.min.css
+++dataTables.uikit.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.uikit.css
+++dataTables.uikit.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\datatables.uikit.min.css
+++jquery.dataTables.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\jquery.datatables.css
+++jquery.dataTables.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\jquery.datatables.min.css
+++jquery.dataTables_themeroller.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\jquery.datatables_themeroller.css
+++jquery.dataTables_themeroller.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\css\jquery.datatables_themeroller.min.css
+++sort_asc.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\images\sort_asc.png
+++sort_asc_disabled.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\images\sort_asc_disabled.png
+++sort_both.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\images\sort_both.png
+++sort_desc.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\images\sort_desc.png
+++sort_desc_disabled.png
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\images\sort_desc_disabled.png
+++dataTables.bootstrap.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.bootstrap.js
+++dataTables.bootstrap.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.bootstrap.min.js
+++dataTables.bootstrap4.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.bootstrap4.js
+++dataTables.bootstrap4.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.bootstrap4.min.js
+++dataTables.dataTables.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.datatables.js
+++dataTables.dataTables.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.datatables.min.js
+++dataTables.foundation.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.foundation.js
+++dataTables.foundation.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.foundation.min.js
+++dataTables.jqueryui.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.jqueryui.js
+++dataTables.jqueryui.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.jqueryui.min.js
+++dataTables.material.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.material.js
+++dataTables.material.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.material.min.js
+++dataTables.semanticui.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.semanticui.js
+++dataTables.semanticui.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.semanticui.min.js
+++dataTables.uikit.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.uikit.js
+++dataTables.uikit.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\datatables.uikit.min.js
+++jquery.dataTables.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\jquery.datatables.js
+++jquery.dataTables.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\datatables\js\jquery.datatables.min.js
+++jquery.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery\dist\jquery.js
+++jquery.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery\dist\jquery.min.js
+++jquery.min.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery\dist\jquery.min.map
+++additional-methods.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++additional-methods.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap.rtl.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap.rtl.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-grid.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-grid.rtl.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-grid.rtl.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-reboot.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-reboot.rtl.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-reboot.rtl.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-theme.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css
+++bootstrap-theme.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map
+++bootstrap-theme.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css
+++bootstrap-theme.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map
+++bootstrap-utilities.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap-utilities.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap-utilities.rtl.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap-utilities.rtl.min.css.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.bundle.js.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.bundle.min.js.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.esm.js.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.esm.min.js.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++bootstrap.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++bootstrap.js.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++bootstrap.min.js.map
+i:{b1ad0930-1e1b-434f-9d17-80b12042b7aa}:f:\projects\high court hrm system\hrm.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map

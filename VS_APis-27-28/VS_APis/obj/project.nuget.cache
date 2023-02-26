@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "STd6sCUIvBkqITbK2ddrcWsLaOCEUFH03zoCBpxAKe9X9lv5kDS+AtcpYCkmws6xxUBHsRNEHRsioNlgYVd2gg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Aqib Amin\\Desktop\\VS_APis\\VS_APis\\VS_APis.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.Extensions.Configuration.Binder"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.Extensions.Http.Polly"
+    }
+  ]
+}

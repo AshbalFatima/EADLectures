@@ -1,0 +1,114 @@
+﻿@model HRM.Models.ViewModels.LHCDataSearch
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Search Employee Data</h1>
+<div class="row">
+    <p>
+        <a asp-action="Create" asp-controller="LHCEmployee" asp-area="Admin" >Create New</a>
+    </p>
+    <form asp-action="Index" method="post">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+        <div class="info-section">
+            
+            <div class="form-group">
+                <label for="cnic-search">Search by CNIC</label>
+                <input type="text" class="form-control" id="cnic-search" asp-for="CNIC" placeholder="Enter CNIC">
+            </div>
+            <div class="form-group">
+                <label for="personal-number-search">Search by Personal Number</label>
+                <input type="text" class="form-control" id="personal-number-search" asp-for="PersonalNumber" placeholder="Enter Personal Number">
+            </div>
+         
+            <hr />
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+            <input type="submit" value="Search" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+<div class="col-12 rt-overflow">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Full Name
+                </th>
+                <th>
+                    Father Name
+                </th>
+                <th>
+                    Mobile No.
+                </th>
+             
+                <th>
+                    CNIC
+                </th>
+
+                <th>
+                    Personal No. 
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model!=null)
+            @foreach (var item in Model.SearchedData)
+            {
+                <tr>
+                   <td>
+                       @item.Id
+                   </td>
+                   <td>
+                       @item.FullName
+                   </td><td>
+                       @item.FatherName
+                   </td><td>
+                       @(item.MobileNumber!=null && item.MobileNumber.Length>8 ? item.MobileNumber.Substring(item.MobileNumber.Length-4,4) : "")
+                   </td><td>
+                       @item.CNIC
+                   </td><td>
+                       @item.PersonalNumber
+                   </td>
+                    <td>
+                        <a asp-action="Edit" asp-area="Admin" asp-controller="LHCEmployee" asp-route-id="@item.Id">Edit</a> 
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<BSCSMVCCore.Models.ToDoTask>
+@{
+}
+
+<table class="table table-responsive">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@Html.ActionLink("Edit Item","Edit","TodoTask",new {@class="btn btn-primary",id=item.Id} )</td>
+        </tr>
+        
+    }
+</table>
+
